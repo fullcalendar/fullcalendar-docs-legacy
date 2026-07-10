@@ -1,6 +1,4 @@
 {
-  // The stock Ruby in Cloudflare Workers Builds is pinned in .ruby-version
-  // to avoid compiling Ruby on every build.
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "fullcalendar-docs-legacy",
   "compatibility_date": "2026-07-10",
