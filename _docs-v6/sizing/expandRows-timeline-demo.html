@@ -26,8 +26,8 @@ needs_premium: true
       nowIndicator: true,
       dayMaxEvents: true, // allow "more" link when too many events
 
-      resources: '{{ site.data.site_url }}/api/demo-feeds/resources.json?max=8',
-      events: '{{ site.data.site_url }}/api/demo-feeds/events.json?with-resources=8'
+      resources: '{{ site.demo_feed_url }}/resources.json?max=8',
+      events: '{{ site.demo_feed_url }}/events.json?with-resources=8'
     });
 
     calendar.render();

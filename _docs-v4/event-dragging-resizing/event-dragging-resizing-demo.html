@@ -25,7 +25,7 @@ plugin_css:
       },
       editable: true,
       eventLimit: true, // when too many events in a day, show the popover
-      events: '{{ site.data.site_url }}/api/demo-feeds/events.json?overload-day'
+      events: '{{ site.demo_feed_url }}/events.json?overload-day'
     });
 
     calendar.render();

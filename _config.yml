@@ -27,7 +27,7 @@ kramdown:
 baseurl: ''
 
 fullcalendar_url: https://fullcalendar.io
-fullcalendar_org: https://github.com/fullcalendar
+demo_feed_url: https://fullcalendar.io/api/demo-feeds
 fullcalendar_repo: https://github.com/fullcalendar/fullcalendar
 fullcalendar_premium_repo: https://github.com/fullcalendar/fullcalendar-workspace
 fullcalendar_react_repo: https://github.com/fullcalendar/fullcalendar-react
