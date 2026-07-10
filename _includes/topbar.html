@@ -2,7 +2,7 @@
   <div class='topbar__container container'>
 
     <div class='topbar__branding'>
-      <a class='branding' href='/'>
+      <a class='branding' href='{{ site.fullcalendar_url }}'>
         <div class='branding-graphic'></div>
         <div class='branding-text'>FullCalendar</div>
       </a>
@@ -19,7 +19,7 @@
       %}topbar__nav-item--selected{%
         endif
       %}'>
-        <a class='topbar__nav-handle' href='{{ site.baseurl }}'>
+        <a class='topbar__nav-handle' href='/'>
           Docs
         </a>
       </div>
@@ -34,22 +34,22 @@
         <div class='topbar__flyout-wrap'>
           <div class='topbar__flyout'>
             <div class='topbar__flyout-item'>
-              <a class='topbar__flyout-handle' href='/getting-help'>
+              <a class='topbar__flyout-handle' href='{{ site.fullcalendar_url }}/getting-help'>
                 Getting Help
               </a>
             </div>
             <div class='topbar__flyout-item'>
-              <a class='topbar__flyout-handle' href='/reporting-bugs'>
+              <a class='topbar__flyout-handle' href='{{ site.fullcalendar_url }}/reporting-bugs'>
                 Reporting Bugs
               </a>
             </div>
             <div class='topbar__flyout-item'>
-              <a class='topbar__flyout-handle' href='/requesting-features'>
+              <a class='topbar__flyout-handle' href='{{ site.fullcalendar_url }}/requesting-features'>
                 Requesting Features
               </a>
             </div>
             <div class='topbar__flyout-item'>
-              <a class='topbar__flyout-handle' href='/contributing'>
+              <a class='topbar__flyout-handle' href='{{ site.fullcalendar_url }}/contributing'>
                 Contributing
               </a>
             </div>
@@ -57,7 +57,7 @@
         </div>
       </div>
       <div class='topbar__nav-item'>
-        <a class='topbar__nav-handle button button--lightblue button--outlined' href='/pricing'>
+        <a class='topbar__nav-handle button button--lightblue button--outlined' href='{{ site.fullcalendar_url }}/pricing'>
           Pricing
         </a>
       </div>

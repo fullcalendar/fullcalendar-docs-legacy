@@ -4,6 +4,7 @@ import timeGridPlugin from '@fullcalendar/timegrid'
 import listPlugin from '@fullcalendar/list'
 import bootstrap5Plugin from '@fullcalendar/bootstrap5'
 import { loadThemeStylesheets } from './theme-stylesheets'
+import { DEMO_FEED_BASE_URL } from './demo-feed-url'
 
 let calendar
 
@@ -41,6 +42,6 @@ function initCalendar() {
     },
     navLinks: true, // can click day/week names to navigate views
     dayMaxEvents: true, // allow "more" link when too many events
-    events: '/api/demo-feeds/events.json?overload-day'
+    events: `${DEMO_FEED_BASE_URL}/events.json?overload-day`
   })
 }

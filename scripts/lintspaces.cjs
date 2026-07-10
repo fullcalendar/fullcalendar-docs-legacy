@@ -11,8 +11,7 @@ const FILES = [
   '_docs-*/**/*.{html,md}',
   '_plugins/**/*.rb',
   'scripts/**/*.sh',
-  '_config.yml', // top level
-  'gulpfile.js' // top level
+  '_config.yml' // top level
 ]
 
 let paths = globby.sync(FILES, {

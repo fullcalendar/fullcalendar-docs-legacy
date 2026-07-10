@@ -13,19 +13,25 @@
     "type": "git",
     "url": "https://github.com/fullcalendar/fullcalendar-docs.git"
   },
+  "packageManager": "pnpm@10.28.0",
+  "engines": {
+    "node": ">=22.16.0"
+  },
   "scripts": {
-    "postinstall": "./scripts/postinstall.sh",
-    "dev": "npm run 'jekyll:clean' && concurrently --raw 'npm:jekyll:dev' 'npm:webpack:dev'",
-    "build": "npm run webpack:build && npm run jekyll:build",
-    "clean": "npm run webpack:clean && npm run jekyll:clean",
+    "dev": "pnpm jekyll:clean && pnpm run \"/:dev$/\"",
+    "build": "pnpm vite:build && pnpm jekyll:build",
+    "clean": "pnpm vite:clean && pnpm jekyll:clean",
     "lint": "./scripts/lintspaces.cjs",
     "htmlproofer": "./scripts/htmlproofer.sh",
-    "jekyll:dev": "RUBYOPT='-W0' bundle exec jekyll serve --port 8789 --watch --incremental",
-    "jekyll:build": "RUBYOPT='-W0' bundle exec jekyll build",
+    "jekyll:dev": "bundle exec jekyll serve --port 8789 --watch --incremental",
+    "jekyll:build": "bundle exec jekyll build",
     "jekyll:clean": "bundle exec jekyll clean",
-    "webpack:dev": "webpack --watch",
-    "webpack:build": "webpack --mode production --no-devtool",
-    "webpack:clean": "rm -rf _site/dist"
+    "vite:dev": "vite build --watch --mode development",
+    "vite:build": "vite build",
+    "vite:clean": "rm -rf _site/dist",
+    "cloudflare:build": "bundle install && pnpm build",
+    "cloudflare:deploy": "wrangler deploy",
+    "cloudflare:preview": "wrangler versions upload"
   },
   "dependencies": {
     "@docsearch/css": "3",
@@ -43,15 +49,24 @@
     "accordion": "^3.0.2"
   },
   "devDependencies": {
-    "concurrently": "^4.1.2",
-    "css-loader": "^6.8.1",
-    "css-minimizer-webpack-plugin": "^3.1.1",
     "globby": "^11.0.0",
     "lintspaces": "^0.6.4",
-    "mini-css-extract-plugin": "^2.4.3",
     "sass": "^1.63.6",
-    "sass-loader": "^13.3.2",
-    "webpack": "^5.88.0",
-    "webpack-cli": "^5.1.4"
+    "vite": "^8.0.0",
+    "wrangler": "^4.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild",
+      "sharp",
+      "workerd"
+    ],
+    "overrides": {
+      "@fullcalendar/premium-common": "6.1.17",
+      "@fullcalendar/resource-daygrid": "6.1.17",
+      "@fullcalendar/scrollgrid": "6.1.17",
+      "@fullcalendar/timeline": "6.1.17"
+    }
   }
 }

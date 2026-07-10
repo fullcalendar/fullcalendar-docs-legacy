@@ -1,0 +1,16 @@
+
+how to bust cache?
+
+rip out Creative Tim stuff?
+
+Live error debugging? JS errors? for AI to fix?
+
+fullcalendar_url needs to be changed. what used for?
+
+for fullcalendar_angular_repo and whatnot,
+  make v6 paths?
+
+wrangler needed if we're doing the cloudflare-ci-build route?
+
+broken images on this page:
+  http://127.0.0.1:8789/premium

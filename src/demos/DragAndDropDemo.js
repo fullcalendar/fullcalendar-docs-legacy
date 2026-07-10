@@ -4,6 +4,7 @@ import timeGridPlugin from '@fullcalendar/timegrid'
 import listPlugin from '@fullcalendar/list'
 import interactionPlugin, { Draggable } from '@fullcalendar/interaction'
 import Demo from './Demo'
+import { DEMO_FEED_BASE_URL } from '../lib/demo-feed-url'
 
 export default class extends Demo {
 
@@ -12,7 +13,7 @@ export default class extends Demo {
     <p>Drag these onto the calendar:</p>
     <div class='fc-daygrid-event fc-daygrid-block-event fc-h-event fc-event fc-event-draggable'>Event 1</div>
     <div class='fc-daygrid-event fc-daygrid-block-event fc-h-event fc-event fc-event-draggable'>Event 2</div>
-    <p><a href='/docs/external-dragging' class='more-link'>More info</a></p>
+    <p><a href='/external-dragging' class='more-link'>More info</a></p>
   `
   // TODO: BASE_URL in href
 
@@ -38,7 +39,7 @@ export default class extends Demo {
       navLinks: true, // can click day/week names to navigate views
       editable: true,
       dayMaxEvents: true, // allow "more" link when too many events
-      events: '/api/demo-feeds/events.json?overload-day'
+      events: `${DEMO_FEED_BASE_URL}/events.json?overload-day`
     })
 
     calendar.render()

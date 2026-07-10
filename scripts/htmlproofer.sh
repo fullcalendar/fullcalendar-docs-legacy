@@ -24,7 +24,7 @@ if [[ "$1" == "--external" ]]; then
   echo "Will check external links."
   echo
 else
-  other_flags="$other_flags --disable-external=true"
+  other_flags="$other_flags --disable-external"
 fi
 
 bundle exec htmlproofer ./_site \

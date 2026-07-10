@@ -2,6 +2,7 @@ import { Calendar } from '@fullcalendar/core'
 import resourceTimeGrid from '@fullcalendar/resource-timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
 import Demo from './Demo'
+import { DEMO_FEED_BASE_URL } from '../lib/demo-feed-url'
 
 export default class extends Demo {
 
@@ -10,7 +11,7 @@ export default class extends Demo {
     <span class='badge'>Premium</span>
     <p>
       Display resources as columns.
-      <a href='/docs/vertical-resource-view' class='more-link'>Learn more</a>
+      <a href='/vertical-resource-view' class='more-link'>Learn more</a>
     </p>
   ` // TODO: BASE_URL in href
 
@@ -26,7 +27,7 @@ export default class extends Demo {
         { id: 'd', title: 'Room D' }
       ],
       editable: true,
-      events: '/api/demo-feeds/events.json?with-resources=4&single-day'
+      events: `${DEMO_FEED_BASE_URL}/events.json?with-resources=4&single-day`
     })
   }
 

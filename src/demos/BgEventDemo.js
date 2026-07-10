@@ -9,11 +9,11 @@ export default class extends Demo {
   title = 'Background Events'
   controlHtml = `
     <p>
-      Display <a href='/docs/background-events'>background events</a>.
+      Display <a href='/background-events'>background events</a>.
     </p>
     <p>
       Also, control where events are
-      <a href='/docs/eventOverlap'>allowed to go</a>
+      <a href='/eventOverlap'>allowed to go</a>
       (the <span style='color:#83ef70'>green areas</span> are prohibited).
     </p>
   `

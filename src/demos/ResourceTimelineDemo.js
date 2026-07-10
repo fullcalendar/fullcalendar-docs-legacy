@@ -2,6 +2,7 @@ import { Calendar } from '@fullcalendar/core'
 import resourceTimelinePlugin from '@fullcalendar/resource-timeline'
 import interactionPlugin from '@fullcalendar/interaction'
 import Demo from './Demo'
+import { DEMO_FEED_BASE_URL } from '../lib/demo-feed-url'
 
 export default class extends Demo {
 
@@ -11,7 +12,7 @@ export default class extends Demo {
     <p>
       Display resources as rows.
       The exact time interval is configurable.
-      <a href='/docs/timeline-view' class='more-link'>Learn more</a>
+      <a href='/timeline-view' class='more-link'>Learn more</a>
     </p>
   ` // TODO: BASE_URL in href
 
@@ -28,8 +29,8 @@ export default class extends Demo {
       },
       editable: true,
       resourceAreaHeaderContent: 'Rooms',
-      resources: '/api/demo-feeds/resources.json?with-nesting&with-colors',
-      events: '/api/demo-feeds/events.json?single-day&for-resource-timeline'
+      resources: `${DEMO_FEED_BASE_URL}/resources.json?with-nesting&with-colors`,
+      events: `${DEMO_FEED_BASE_URL}/events.json?single-day&for-resource-timeline`
     })
   }
 

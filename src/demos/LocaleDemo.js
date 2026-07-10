@@ -5,6 +5,7 @@ import dayGridPlugin from '@fullcalendar/daygrid'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import listPlugin from '@fullcalendar/list'
 import Demo from './Demo'
+import { DEMO_FEED_BASE_URL } from '../lib/demo-feed-url'
 
 const INITIAL_LOCALE = 'bg'
 
@@ -18,7 +19,7 @@ export default class extends Demo {
       </lable>
     </p>
     <p><select id='locale-select'></select></p>
-    <p><a href='/docs/localization' class='more-link'>More info</a></p>
+    <p><a href='/localization' class='more-link'>More info</a></p>
   `
   // TODO: BASE_URL in href
 
@@ -39,7 +40,7 @@ export default class extends Demo {
       navLinks: true, // can click day/week names to navigate views
       editable: true,
       dayMaxEvents: true, // allow "more" link when too many events
-      events: '/api/demo-feeds/events.json?overload-day'
+      events: `${DEMO_FEED_BASE_URL}/events.json?overload-day`
     })
 
     // build the locale selector's options

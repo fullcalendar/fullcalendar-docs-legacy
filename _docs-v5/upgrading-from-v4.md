@@ -123,7 +123,7 @@ This guide outlines the changes between v4 and v5.
 
 <br />
 
-**Want the full docs** in a non-changelog format? [View the docs]({{ site.baseurl }})
+**Want the full docs** in a non-changelog format? [View the docs](/v5)
 
 **Found a bug?** [Report it on the issue tracker](/reporting-bugs)
 

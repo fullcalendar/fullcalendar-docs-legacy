@@ -1,9 +1,10 @@
-import { Calendar, requestJson } from '@fullcalendar/core'
+import { Calendar } from '@fullcalendar/core'
 import interactionPlugin from '@fullcalendar/interaction'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import listPlugin from '@fullcalendar/list'
 import Demo from './Demo'
+import { DEMO_FEED_BASE_URL } from '../lib/demo-feed-url'
 
 const INITIAL_TIME_ZONE = 'Europe/Luxembourg'
 
@@ -21,9 +22,8 @@ export default class extends Demo {
         <option value='UTC'>UTC</option>
       </select>
     </p>
-    <p><a href='/docs/timeZone' class='more-link'>More info</a></p>
+    <p><a href='/timeZone' class='more-link'>More info</a></p>
   `
-  // TODO: BASE_URL in href
 
   init(controlEl, contentEl, calendarEl) {
     let timeZoneSelectorEl = controlEl.querySelector('select')
@@ -42,7 +42,7 @@ export default class extends Demo {
       editable: true,
       selectable: true,
       dayMaxEvents: true, // allow "more" link when too many events
-      events: '/api/demo-feeds/events.json',
+      events: `${DEMO_FEED_BASE_URL}/events.json`,
       loading: function (bool) {
         // if (bool) {
         //   loadingEl.style.display = 'inline' // show
@@ -55,7 +55,7 @@ export default class extends Demo {
 
     // load the list of available timezones, build the <select> options
     // it's highly encouraged to use your own AJAX lib instead of using FullCalendar's internal util
-    fetch('/api/demo-feeds/timezones.json').then((res) => {
+    fetch(`${DEMO_FEED_BASE_URL}/timezones.json`).then((res) => {
       if (res.ok) {
         res.json().then((timeZones) => {
           timeZones.forEach(function (timeZone) {

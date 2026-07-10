@@ -255,5 +255,7 @@ end
 
 
 def normalize_url(url)
+  return url if url == '/'
+
   return url.sub(/\/$/, '') # strip trailing slash (b/c of index url workaround)
 end

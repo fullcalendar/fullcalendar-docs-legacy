@@ -1,5 +1,5 @@
 
-# don't delete webpack-generated files
+# don't delete Vite-generated files
 keep_files:
   - dist
 
@@ -9,10 +9,13 @@ exclude:
   - scripts
   - src
   - README.*
-  - webpack.config.js
+  - TODO.*
+  - vite.config.js
+  - wrangler.jsonc
   - node_modules
   - package.json
   - package-lock.json
+  - pnpm-lock.yaml
   - Gemfile
   - Gemfile.lock
 
@@ -21,9 +24,10 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-baseurl: /docs
+baseurl: ''
 
 fullcalendar_site: https://fullcalendar-site.pages.dev
+fullcalendar_url: https://fullcalendar.io
 fullcalendar_org: https://github.com/fullcalendar
 fullcalendar_repo: https://github.com/fullcalendar/fullcalendar
 fullcalendar_premium_repo: https://github.com/fullcalendar/fullcalendar-workspace

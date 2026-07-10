@@ -11,7 +11,7 @@ export default class extends Demo {
     <p>
       Click and drag your pointer over some dates.
       You will be asked to create an event via the API.
-      <a href='/docs/date-clicking-selecting' class='more-link'>Learn more</a>
+      <a href='/date-clicking-selecting' class='more-link'>Learn more</a>
     </p>
   `
   // TODO: BASE_URL in href

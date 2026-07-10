@@ -35,7 +35,7 @@ export default class extends Demo {
       <option value='yeti'>Yeti</option>
     </select>
     </p>
-    <p><a href='/docs/theming' class='more-link'>More info</a></p>
+    <p><a href='/theming' class='more-link'>More info</a></p>
   `
   // TODO: BASE_URL in href
 

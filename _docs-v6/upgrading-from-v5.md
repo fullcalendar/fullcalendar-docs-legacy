@@ -21,7 +21,7 @@ The primary goal of V6 is to solve bugs related to the *installation* of FullCal
 
 **Want the code?** [Read the instructions](initialize-es6)
 
-**Want the full docs** in a non-changelog format? [View the docs]({{ site.baseurl }})
+**Want the full docs** in a non-changelog format? [View the docs](/)
 
 **Found a bug?** [Report it on the issue tracker](/reporting-bugs)
 

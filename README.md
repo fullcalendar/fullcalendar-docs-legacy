@@ -24,22 +24,46 @@ cd fullcalendar-docs
 
 Prerequisites:
 
-- NPM / PNPM
-- Ruby 2.x
-- [Rubygem bundler](https://bundler.io/) (`gem install bundler`)
+- Node.js 22.16 or later
+- pnpm 10.28
+- Ruby 3.4
+- [RubyGems Bundler](https://bundler.io/)
 
 
 ## CLI
 
 ```sh
-npm install
+bundle install
+pnpm install
 
 # watch & serve while developing
-npm run dev
+pnpm dev
 
 # build into _site directory
-npm run build
+pnpm build
 ```
+
+The development site is served at [http://localhost:8789](http://localhost:8789).
+
+
+## Deployment
+
+The generated `_site` directory is deployed as static assets on Cloudflare Workers.
+Workers Builds should use these commands:
+
+```sh
+# build command
+pnpm cloudflare:build
+
+# production deploy command
+pnpm cloudflare:deploy
+
+# non-production branch deploy command
+pnpm cloudflare:preview
+```
+
+Set `PNPM_VERSION` to `10.28.0` in the Workers Builds environment. Ruby and
+Node.js are selected from `.ruby-version` and `.node-version`.
 
 
 ## Contributing
@@ -49,5 +73,5 @@ To make edits to the documentation please submit a [Pull Request](https://help.g
 Ensure linting passes before submitting PRs:
 
 ```sh
-npm run lint
+pnpm lint
 ```

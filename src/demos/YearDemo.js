@@ -3,6 +3,7 @@ import interactionPlugin from '@fullcalendar/interaction'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import multiMonthPlugin from '@fullcalendar/multimonth'
 import Demo from './Demo'
+import { DEMO_FEED_BASE_URL } from '../lib/demo-feed-url'
 
 export default class extends Demo {
 
@@ -10,7 +11,7 @@ export default class extends Demo {
   controlHtml = `
     <p>
       Display an entire year
-      <a href='/docs/multimonth-grid' class='more-link'>Learn more</a>
+      <a href='/multimonth-grid' class='more-link'>Learn more</a>
     </p>
   ` // TODO: BASE_URL in href
 
@@ -39,7 +40,7 @@ export default class extends Demo {
         }
       },
       editable: true,
-      events: '/api/demo-feeds/events.json'
+      events: `${DEMO_FEED_BASE_URL}/events.json`
     })
   }
 
