@@ -25,7 +25,6 @@ export default defineConfig(({ mode }) => ({
       input: {
         base: path.resolve(projectRoot, 'src/styles/base.scss'),
         docs: path.resolve(projectRoot, 'src/docs.js'),
-        demos: path.resolve(projectRoot, 'src/demos.js'),
         'demo-to-codepen': path.resolve(projectRoot, 'src/demo-to-codepen.js'),
         'theme-chooser': path.resolve(projectRoot, 'src/theme-chooser.js'),
       },

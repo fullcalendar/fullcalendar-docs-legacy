@@ -35,18 +35,7 @@
   },
   "dependencies": {
     "@docsearch/css": "3",
-    "@docsearch/js": "3",
-    "@fullcalendar/bootstrap5": "6.1.17",
-    "@fullcalendar/core": "6.1.17",
-    "@fullcalendar/daygrid": "6.1.17",
-    "@fullcalendar/interaction": "6.1.17",
-    "@fullcalendar/list": "6.1.17",
-    "@fullcalendar/multimonth": "6.1.17",
-    "@fullcalendar/resource": "6.1.17",
-    "@fullcalendar/resource-timegrid": "6.1.17",
-    "@fullcalendar/resource-timeline": "6.1.17",
-    "@fullcalendar/timegrid": "6.1.17",
-    "accordion": "^3.0.2"
+    "@docsearch/js": "3"
   },
   "devDependencies": {
     "globby": "^11.0.0",
@@ -61,12 +50,6 @@
       "esbuild",
       "sharp",
       "workerd"
-    ],
-    "overrides": {
-      "@fullcalendar/premium-common": "6.1.17",
-      "@fullcalendar/resource-daygrid": "6.1.17",
-      "@fullcalendar/scrollgrid": "6.1.17",
-      "@fullcalendar/timeline": "6.1.17"
-    }
+    ]
   }
 }

@@ -4,12 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  '@fullcalendar/premium-common': 6.1.17
-  '@fullcalendar/resource-daygrid': 6.1.17
-  '@fullcalendar/scrollgrid': 6.1.17
-  '@fullcalendar/timeline': 6.1.17
-
 importers:
 
   .:
@@ -20,39 +14,6 @@ importers:
       '@docsearch/js':
         specifier: '3'
         version: 3.9.0(@algolia/client-search@5.55.2)(search-insights@2.17.3)
-      '@fullcalendar/bootstrap5':
-        specifier: 6.1.17
-        version: 6.1.17(@fullcalendar/core@6.1.17)
-      '@fullcalendar/core':
-        specifier: 6.1.17
-        version: 6.1.17
-      '@fullcalendar/daygrid':
-        specifier: 6.1.17
-        version: 6.1.17(@fullcalendar/core@6.1.17)
-      '@fullcalendar/interaction':
-        specifier: 6.1.17
-        version: 6.1.17(@fullcalendar/core@6.1.17)
-      '@fullcalendar/list':
-        specifier: 6.1.17
-        version: 6.1.17(@fullcalendar/core@6.1.17)
-      '@fullcalendar/multimonth':
-        specifier: 6.1.17
-        version: 6.1.17(@fullcalendar/core@6.1.17)
-      '@fullcalendar/resource':
-        specifier: 6.1.17
-        version: 6.1.17(@fullcalendar/core@6.1.17)
-      '@fullcalendar/resource-timegrid':
-        specifier: 6.1.17
-        version: 6.1.17(@fullcalendar/core@6.1.17)(@fullcalendar/resource@6.1.17(@fullcalendar/core@6.1.17))
-      '@fullcalendar/resource-timeline':
-        specifier: 6.1.17
-        version: 6.1.17(@fullcalendar/core@6.1.17)(@fullcalendar/resource@6.1.17(@fullcalendar/core@6.1.17))
-      '@fullcalendar/timegrid':
-        specifier: 6.1.17
-        version: 6.1.17(@fullcalendar/core@6.1.17)
-      accordion:
-        specifier: ^3.0.2
-        version: 3.0.2
     devDependencies:
       globby:
         specifier: ^11.0.0
@@ -385,77 +346,6 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
-
-  '@fullcalendar/bootstrap5@6.1.17':
-    resolution: {integrity: sha512-8B6a7QvHzTOlBBfvZeN38wLs8+eL65Mwh0wfqRNkwJXkNtLw8mow3KJ8tZR6epNnhrcY/6TyyVWo5AJab2uENg==}
-    peerDependencies:
-      '@fullcalendar/core': ~6.1.17
-
-  '@fullcalendar/core@6.1.17':
-    resolution: {integrity: sha512-0W7lnIrv18ruJ5zeWBeNZXO8qCWlzxDdp9COFEsZnyNjiEhUVnrW/dPbjRKYpL0edGG0/Lhs0ghp1z/5ekt8ZA==}
-
-  '@fullcalendar/daygrid@6.1.17':
-    resolution: {integrity: sha512-K7m+pd7oVJ9fW4h7CLDdDGJbc9szJ1xDU1DZ2ag+7oOo1aCNLv44CehzkkknM6r8EYlOOhgaelxQpKAI4glj7A==}
-    peerDependencies:
-      '@fullcalendar/core': ~6.1.17
-
-  '@fullcalendar/interaction@6.1.17':
-    resolution: {integrity: sha512-AudvQvgmJP2FU89wpSulUUjeWv24SuyCx8FzH2WIPVaYg+vDGGYarI7K6PcM3TH7B/CyaBjm5Rqw9lXgnwt5YA==}
-    peerDependencies:
-      '@fullcalendar/core': ~6.1.17
-
-  '@fullcalendar/list@6.1.17':
-    resolution: {integrity: sha512-fkyK49F9IxwlGUBVhJGsFpd/LTi/vRVERLIAe1HmBaGkjwpxnynm8TMLb9mZip97wvDk3CmZWduMe6PxscAlow==}
-    peerDependencies:
-      '@fullcalendar/core': ~6.1.17
-
-  '@fullcalendar/multimonth@6.1.17':
-    resolution: {integrity: sha512-ZxA9mkTzKayCdxR5je9P9++qqhSeSbuvXmvZ6doZw6omv8K52cD7XJii+P7gvxATXxtI6hg4i+DuMyOHxP1E2g==}
-    peerDependencies:
-      '@fullcalendar/core': ~6.1.17
-
-  '@fullcalendar/premium-common@6.1.17':
-    resolution: {integrity: sha512-zoN7fMwGMcP6Xu+2YudRAGfdwD2J+V+A/xAieXgYDSZT+5ekCsjZiwb2rmvthjt+HVnuZcqs6sGp7rnJ8Ie/mA==}
-    peerDependencies:
-      '@fullcalendar/core': ~6.1.17
-
-  '@fullcalendar/resource-daygrid@6.1.17':
-    resolution: {integrity: sha512-BghbufO4lsy/dckmPSxGzaxLH4c9oqykG01khYXRJijbls358CgSe+X9m1Jd5ntRZQU8o3U0Ma0pTZHr7Nx/6A==}
-    peerDependencies:
-      '@fullcalendar/core': ~6.1.17
-      '@fullcalendar/resource': ~6.1.17
-
-  '@fullcalendar/resource-timegrid@6.1.17':
-    resolution: {integrity: sha512-9gsR/2oKTb9zpx7z2/B5rbk2A0dmD/sfYAARSyQTuQD1CI5He8q63jdcYVzWW3CCfJa/5jHEqQaIiCKNlCq6vg==}
-    peerDependencies:
-      '@fullcalendar/core': ~6.1.17
-      '@fullcalendar/resource': ~6.1.17
-
-  '@fullcalendar/resource-timeline@6.1.17':
-    resolution: {integrity: sha512-QMrtc1mLs4c6DtlBNmWICef8Lr4CmzE47uWS/rcJBd9K2kBzvusTp7AQQ1qn3RX5UnjNHqT8pkKO/wE4yspJQw==}
-    peerDependencies:
-      '@fullcalendar/core': ~6.1.17
-      '@fullcalendar/resource': ~6.1.17
-
-  '@fullcalendar/resource@6.1.17':
-    resolution: {integrity: sha512-hWnbOWlroIN5Wt4NJmHAJh/F7ge2cV6S0PdGSmLFoZJZJA0hJX9GeYRzyz4MlUoj7f4dGzBlesy2RdC+t5FEMw==}
-    peerDependencies:
-      '@fullcalendar/core': ~6.1.17
-
-  '@fullcalendar/scrollgrid@6.1.17':
-    resolution: {integrity: sha512-lzphEKwxWMS4xQVEuimzZjKFLijlSn49ExvzkYZls0VLDwOa3BYHcRlDJBjQ0LP6kauz9aatg3MfRIde/LAazA==}
-    peerDependencies:
-      '@fullcalendar/core': ~6.1.17
-
-  '@fullcalendar/timegrid@6.1.17':
-    resolution: {integrity: sha512-K4PlA3L3lclLOs3IX8cvddeiJI9ZVMD7RA9IqaWwbvac771971foc9tFze9YY+Pqesf6S+vhS2dWtEVlERaGlQ==}
-    peerDependencies:
-      '@fullcalendar/core': ~6.1.17
-
-  '@fullcalendar/timeline@6.1.17':
-    resolution: {integrity: sha512-UhL2OOph/S0cEKs3lzbXjS2gTxmQwaNug2XFjdljvO/ERj10v7OBXj/zvJrPyhjvWR/CSgjNgBaUpngkCu4JtQ==}
-    peerDependencies:
-      '@fullcalendar/core': ~6.1.17
 
   '@img/colour@1.1.0':
     resolution: {integrity: sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ==}
@@ -818,9 +708,6 @@ packages:
   '@tybys/wasm-util@0.10.3':
     resolution: {integrity: sha512-F3fo1MYrRJYL3zER0OUOmkutjr1Vp23m7OsSgp7nq4SP6OqX6C/56XFIPAl5bt3zaBRjmW7SGz3u/6LwFpYcOg==}
 
-  accordion@3.0.2:
-    resolution: {integrity: sha512-jbQfFaw+57OBwPt7qSNHuW+RA8smmRwkWRS1Ozh6K/QxUspBgBV/LpdSzlY7vee8TomS6j3D33B9rIeH1qMwsA==}
-
   algoliasearch@5.55.2:
     resolution: {integrity: sha512-OyacJsaeuLUvGWOynNqYc6sx88XvyoG39wMT8SYqL3l9wwaorDW/LPRbUPfhzw0bWsUWzNCZTnFYOrWFBKsUaw==}
     engines: {node: '>= 14.0.0'}
@@ -1055,9 +942,6 @@ packages:
   postcss@8.5.16:
     resolution: {integrity: sha512-vuwillviilfKZsg0VGj5R/YwwcHx4SLsIOI/7K6mQkWx+l5cUHTjj5g0AasTBcyXsbfTgrwsUNmVUb5xVwyPwg==}
     engines: {node: ^10 || ^12 || >=14}
-
-  preact@10.12.1:
-    resolution: {integrity: sha512-l8386ixSsBdbreOAkqtrwqHwdvR35ID8c3rKPa8lCWuO86dBi32QWHV4vfsZK1utLLFMvw+Z5Ad4XLkZzchscg==}
 
   preact@10.29.7:
     resolution: {integrity: sha512-DCHYrK/B10yUD3ZjLfhZ3WIE/9Vf9VFUODcRE2dRomTYDpJk6z6L9wecSfhfE6M9ZTHUdyQkoC46arIDhEV84Q==}
@@ -1495,79 +1379,6 @@ snapshots:
   '@esbuild/win32-x64@0.28.1':
     optional: true
 
-  '@fullcalendar/bootstrap5@6.1.17(@fullcalendar/core@6.1.17)':
-    dependencies:
-      '@fullcalendar/core': 6.1.17
-
-  '@fullcalendar/core@6.1.17':
-    dependencies:
-      preact: 10.12.1
-
-  '@fullcalendar/daygrid@6.1.17(@fullcalendar/core@6.1.17)':
-    dependencies:
-      '@fullcalendar/core': 6.1.17
-
-  '@fullcalendar/interaction@6.1.17(@fullcalendar/core@6.1.17)':
-    dependencies:
-      '@fullcalendar/core': 6.1.17
-
-  '@fullcalendar/list@6.1.17(@fullcalendar/core@6.1.17)':
-    dependencies:
-      '@fullcalendar/core': 6.1.17
-
-  '@fullcalendar/multimonth@6.1.17(@fullcalendar/core@6.1.17)':
-    dependencies:
-      '@fullcalendar/core': 6.1.17
-      '@fullcalendar/daygrid': 6.1.17(@fullcalendar/core@6.1.17)
-
-  '@fullcalendar/premium-common@6.1.17(@fullcalendar/core@6.1.17)':
-    dependencies:
-      '@fullcalendar/core': 6.1.17
-
-  '@fullcalendar/resource-daygrid@6.1.17(@fullcalendar/core@6.1.17)(@fullcalendar/resource@6.1.17(@fullcalendar/core@6.1.17))':
-    dependencies:
-      '@fullcalendar/core': 6.1.17
-      '@fullcalendar/daygrid': 6.1.17(@fullcalendar/core@6.1.17)
-      '@fullcalendar/premium-common': 6.1.17(@fullcalendar/core@6.1.17)
-      '@fullcalendar/resource': 6.1.17(@fullcalendar/core@6.1.17)
-
-  '@fullcalendar/resource-timegrid@6.1.17(@fullcalendar/core@6.1.17)(@fullcalendar/resource@6.1.17(@fullcalendar/core@6.1.17))':
-    dependencies:
-      '@fullcalendar/core': 6.1.17
-      '@fullcalendar/premium-common': 6.1.17(@fullcalendar/core@6.1.17)
-      '@fullcalendar/resource': 6.1.17(@fullcalendar/core@6.1.17)
-      '@fullcalendar/resource-daygrid': 6.1.17(@fullcalendar/core@6.1.17)(@fullcalendar/resource@6.1.17(@fullcalendar/core@6.1.17))
-      '@fullcalendar/timegrid': 6.1.17(@fullcalendar/core@6.1.17)
-
-  '@fullcalendar/resource-timeline@6.1.17(@fullcalendar/core@6.1.17)(@fullcalendar/resource@6.1.17(@fullcalendar/core@6.1.17))':
-    dependencies:
-      '@fullcalendar/core': 6.1.17
-      '@fullcalendar/premium-common': 6.1.17(@fullcalendar/core@6.1.17)
-      '@fullcalendar/resource': 6.1.17(@fullcalendar/core@6.1.17)
-      '@fullcalendar/scrollgrid': 6.1.17(@fullcalendar/core@6.1.17)
-      '@fullcalendar/timeline': 6.1.17(@fullcalendar/core@6.1.17)
-
-  '@fullcalendar/resource@6.1.17(@fullcalendar/core@6.1.17)':
-    dependencies:
-      '@fullcalendar/core': 6.1.17
-      '@fullcalendar/premium-common': 6.1.17(@fullcalendar/core@6.1.17)
-
-  '@fullcalendar/scrollgrid@6.1.17(@fullcalendar/core@6.1.17)':
-    dependencies:
-      '@fullcalendar/core': 6.1.17
-      '@fullcalendar/premium-common': 6.1.17(@fullcalendar/core@6.1.17)
-
-  '@fullcalendar/timegrid@6.1.17(@fullcalendar/core@6.1.17)':
-    dependencies:
-      '@fullcalendar/core': 6.1.17
-      '@fullcalendar/daygrid': 6.1.17(@fullcalendar/core@6.1.17)
-
-  '@fullcalendar/timeline@6.1.17(@fullcalendar/core@6.1.17)':
-    dependencies:
-      '@fullcalendar/core': 6.1.17
-      '@fullcalendar/premium-common': 6.1.17(@fullcalendar/core@6.1.17)
-      '@fullcalendar/scrollgrid': 6.1.17(@fullcalendar/core@6.1.17)
-
   '@img/colour@1.1.0': {}
 
   '@img/sharp-darwin-arm64@0.34.5':
@@ -1827,8 +1638,6 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
-  accordion@3.0.2: {}
-
   algoliasearch@5.55.2:
     dependencies:
       '@algolia/abtesting': 1.21.2
@@ -2063,8 +1872,6 @@ snapshots:
       nanoid: 3.3.15
       picocolors: 1.1.1
       source-map-js: 1.2.1
-
-  preact@10.12.1: {}
 
   preact@10.29.7: {}
 
