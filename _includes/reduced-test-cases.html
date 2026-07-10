@@ -1,0 +1,51 @@
+<h2>Step 1: Isolate the bug on your end</h2>
+
+<p>
+  More often than not, the problem is with your code, not with FullCalendar. To determine this,
+  remove as much of your code as possible:
+</p>
+
+<ul>
+  <li>Remove all unrelated stylesheets and JS files</li>
+  <li>Remove all unrelated 3rd party libraries</li>
+  <li>Remove all server-side logic. Use static HTML and JSON files instead.</li>
+</ul>
+
+<p>
+  For more info on this technique, read
+  <a href='https://css-tricks.com/reduced-test-cases/'>Reduced Test Cases</a>.
+</p>
+
+<h2>Step 2: Post a public demonstration of the bug</h2>
+
+<p>
+  Use a service like <a href='https://codepen.io/'>CodePen</a> or
+  <a href='https://jsfiddle.net/'>JSFiddle</a> to demonstrate the bug online. Enter your JS, CSS,
+  HTML, and JSON and wire up all the relevant dependencies. To help you get started, here are some
+  <strong>debugging templates for FullCalendar {{ page.version.id }}:</strong>
+</p>
+
+<ul>
+  {% for template in page.codepen_templates %}
+    <li>
+      <a href='{{ site.baseurl }}{{ template.demo_url }}' data-codepen='{{ site.baseurl }}{{ template.demo_url }}'>
+        {{- template.label -}}
+      </a>
+      {% if template.feed_demo_url %}
+        (<a href='{{ site.baseurl }}{{ template.feed_demo_url }}' data-codepen='{{ site.baseurl }}{{ template.feed_demo_url }}'>with JSON feed</a>)
+      {% endif %}
+    </li>
+  {% endfor %}
+
+  {% for framework in page.framework_examples %}
+    <li>
+      {% for example in framework.examples %}
+        <a href='{{ example.url }}' target='_blank' rel='noreferrer'>{{ example.label }}</a>{% unless forloop.last %} |{% endunless %}
+      {% endfor %}
+      {% if framework.brave_note %}
+        (if using Brave, ensure your
+        <a href='https://developer.stackblitz.com/platform/webcontainers/browser-config-brave' target='_blank' rel='noreferrer'>"shields are down"</a>)
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

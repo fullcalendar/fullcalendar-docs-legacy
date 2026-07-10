@@ -23,7 +23,7 @@
     "clean": "pnpm vite:clean && pnpm jekyll:clean",
     "lint": "./scripts/lintspaces.cjs",
     "htmlproofer": "./scripts/htmlproofer.sh",
-    "jekyll:dev": "bundle exec jekyll serve --port 8789 --watch --incremental",
+    "jekyll:dev": "bundle exec jekyll serve --watch --incremental",
     "jekyll:build": "bundle exec jekyll build",
     "jekyll:clean": "bundle exec jekyll clean",
     "vite:dev": "vite build --watch --mode development",

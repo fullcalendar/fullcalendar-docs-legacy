@@ -43,7 +43,7 @@ pnpm dev
 pnpm build
 ```
 
-The development site is served at [http://localhost:8789](http://localhost:8789).
+The development site is served at Jekyll's default port [http://localhost:4000](http://localhost:4000).
 
 
 ## Deployment
