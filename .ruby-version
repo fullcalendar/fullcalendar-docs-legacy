@@ -1,2 +1,3 @@
-# Matches the stock Ruby in the Cloudflare Workers build image.
 3.4.4
+# Matches the stock Ruby in the Cloudflare Workers build image.
+# (this comment must be last)
