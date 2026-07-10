@@ -26,13 +26,13 @@ kramdown:
 
 baseurl: ''
 
-fullcalendar_url: https://fullcalendar.io
+production_url: https://fullcalendar.io
 demo_feed_url: https://fullcalendar.io/api/demo-feeds
-fullcalendar_repo: https://github.com/fullcalendar/fullcalendar
-fullcalendar_premium_repo: https://github.com/fullcalendar/fullcalendar-workspace
-fullcalendar_react_repo: https://github.com/fullcalendar/fullcalendar-react
-fullcalendar_vue_repo: https://github.com/fullcalendar/fullcalendar-vue
-fullcalendar_angular_repo: https://github.com/fullcalendar/fullcalendar-angular
+repo_url: https://github.com/fullcalendar/fullcalendar
+premium_repo_url: https://github.com/fullcalendar/fullcalendar-workspace
+react_repo_url: https://github.com/fullcalendar/fullcalendar-react
+vue_repo_url: https://github.com/fullcalendar/fullcalendar-vue
+angular_repo_url: https://github.com/fullcalendar/fullcalendar-angular
 
 # ordered by how they should appear in UI
 available_versions:

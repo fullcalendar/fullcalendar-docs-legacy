@@ -7,7 +7,7 @@ FullCalendar seamlessly integrates with the [Angular] 7. It provides a component
 
 This component is built and maintained by [irustm](https://github.com/irustm) in partnership with the maintainers of FullCalendar. It is the official Angular connector, released under an MIT license, the same license the standard version of FullCalendar uses. Useful links:
 
-- [Browse the Github repo]({{ site.fullcalendar_angular_repo }}) (please star it!)
+- [Browse the Github repo]({{ site.angular_repo_url }}) (please star it!)
 - [Bug report instructions](/reporting-bugs)
 - [Example project][example project]. It was initially set up with the `ng new` command of the [Angular CLI], but with lots of stuff stripped out including testing and linting. The code in this guide loosely follows it.
 - [Runnable project](https://stackblitz.com/github/fullcalendar/fullcalendar-examples/tree/v4/angular) in a code playground

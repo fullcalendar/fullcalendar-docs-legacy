@@ -9,7 +9,7 @@ This is more than a mere "connector". It tells the core FullCalendar package to 
 
 This package is released under an MIT license, the same license the standard version of FullCalendar uses. Useful links:
 
-- [Browse the Github repo]({{ site.fullcalendar_react_repo }}) (please star it!)
+- [Browse the Github repo]({{ site.react_repo_url }}) (please star it!)
 - [Bug report instructions](/reporting-bugs)
 - [Example project][example project] leveraging [Webpack], [Babel], and [css-loader] (the code in this guide loosely follows it)
 - [Runnable project](https://stackblitz.com/github/fullcalendar/fullcalendar-examples/tree/v5/react) in a code playground

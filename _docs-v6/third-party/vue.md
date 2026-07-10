@@ -7,7 +7,7 @@ FullCalendar seamlessly integrates with the [Vue] JavaScript framework. It provi
 
 This package is released under an MIT license, the same license the standard version of FullCalendar uses. Useful links:
 
-- [Browse the Github repo]({{ site.fullcalendar_vue_repo }}) (please star it!)
+- [Browse the Github repo]({{ site.vue_repo_url }}) (please star it!)
 - [Bug report instructions](/reporting-bugs)
 - Example projects:
   - [Vue 2 example](https://github.com/fullcalendar/fullcalendar-examples/tree/main/vue2) (uses [Webpack] and [css-loader]) - [runnable](https://stackblitz.com/github/fullcalendar/fullcalendar-examples/tree/main/vue2)

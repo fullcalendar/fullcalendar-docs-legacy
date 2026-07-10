@@ -7,7 +7,7 @@ FullCalendar integrates with the [Angular] 9 - 14. It provides a component that 
 
 This component is built and maintained by [irustm](https://github.com/irustm) in partnership with the maintainers of FullCalendar. It is the official Angular connector, released under an MIT license, the same license the standard version of FullCalendar uses. Useful links:
 
-- [Browse the Github repo]({{ site.fullcalendar_angular_repo }}) (please star it!)
+- [Browse the Github repo]({{ site.angular_repo_url }}) (please star it!)
 - [Bug report instructions](/reporting-bugs)
 - [Angular 13 example project]
 - [Angular 14 example project](https://github.com/fullcalendar/fullcalendar-examples/tree/v5/angular14)

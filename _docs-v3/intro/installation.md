@@ -8,7 +8,7 @@ You must first get FullCalendar's code loaded onto the page before initializing 
 
 ## Script Tags
 
-First, download a ZIP from the [releases page]({{ site.fullcalendar_repo }}/releases). After unzipping, find the files `fullcalendar.js` and `fullcalendar.css`.
+First, download a ZIP from the [releases page]({{ site.repo_url }}/releases). After unzipping, find the files `fullcalendar.js` and `fullcalendar.css`.
 
 Then, download the JavaScript files for FullCalendar's two dependencies: [jQuery](https://jquery.com/) and [Moment](https://momentjs.com/).
 

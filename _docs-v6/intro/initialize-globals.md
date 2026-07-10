@@ -10,7 +10,7 @@ It's possible to manually include the necessary `<script>` tags in the head of y
 
 First, obtain the standard `fullcalendar` bundle in one of the following ways:
 
-- **Download**: <a href='{{ site.fullcalendar_repo }}/releases/download/v{{ site.data.latest-releases.v6 }}/fullcalendar-{{ site.data.latest-releases.v6 }}.zip'>fullcalendar-{{ site.data.latest-releases.v6 }}.zip</a>
+- **Download**: <a href='{{ site.repo_url }}/releases/download/v{{ site.data.latest-releases.v6 }}/fullcalendar-{{ site.data.latest-releases.v6 }}.zip'>fullcalendar-{{ site.data.latest-releases.v6 }}.zip</a>
 - **CDN:** [jsdelivr](https://www.jsdelivr.com/package/npm/fullcalendar?version={{ site.data.latest-releases.v6 }})
 - **NPM:** `npm install fullcalendar`
 
@@ -56,7 +56,7 @@ The `fullcalendar` bundle's `index.global(.min).js` file includes the following 
 
 First, obtain the premium `fullcalendar-scheduler` bundle in one of the following ways:
 
-- **Download**: <a href='{{ site.fullcalendar_premium_repo }}/releases/download/v{{ site.data.latest-releases.v6 }}/fullcalendar-scheduler-{{ site.data.latest-releases.v6 }}.zip'>fullcalendar-scheduler-{{ site.data.latest-releases.v6 }}.zip</a>
+- **Download**: <a href='{{ site.premium_repo_url }}/releases/download/v{{ site.data.latest-releases.v6 }}/fullcalendar-scheduler-{{ site.data.latest-releases.v6 }}.zip'>fullcalendar-scheduler-{{ site.data.latest-releases.v6 }}.zip</a>
 - **CDN:** [jsdelivr](https://www.jsdelivr.com/package/npm/fullcalendar-scheduler?version={{ site.data.latest-releases.v6 }})
 - **NPM:** `npm install fullcalendar-scheduler`
 

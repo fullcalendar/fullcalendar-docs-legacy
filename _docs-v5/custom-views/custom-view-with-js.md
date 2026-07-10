@@ -104,4 +104,4 @@ Both the config and component techniques receive "props", an object with informa
 
 The above documentation is helpful for building a barebones view, but making it full-featured and interactive is a further challenge. A robust view should be right-to-left compatible, locale-customizable, allow event dragging and resizing, allow user selections, and more...
 
-Making a full-featured view is beyond the scope of this document. Further documentation should be written and further APIs should be formalized, but for now, it would be best to browse FullCalendar's [source on GitHub]({{ site.fullcalendar_repo }}).
+Making a full-featured view is beyond the scope of this document. Further documentation should be written and further APIs should be formalized, but for now, it would be best to browse FullCalendar's [source on GitHub]({{ site.repo_url }}).
