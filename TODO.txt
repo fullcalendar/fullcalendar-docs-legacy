@@ -17,3 +17,5 @@ no newer angular reduced-test-case?
   (same issue with angular.md page)
 
 only newest angular is 20? maybe we didnt fully port over content
+
+what do we do about Algolia search?
