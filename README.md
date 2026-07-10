@@ -1,16 +1,11 @@
 
-# FullCalendar Docs
+# FullCalendar Legacy Docs
 
 This repo contains static legacy documentation and release assets.
 
 Documentation articles are found in directories like `_docs-*`.
 
 Made with [Jekyll](https://jekyllrb.com/).
-
-
-## Reporting Problems
-
-See a problem with the docs? Create a ticket in the [main dev repo's issue tracker](https://github.com/fullcalendar/fullcalendar/issues). All docs-related bugs have the [docs label](https://github.com/fullcalendar/fullcalendar/issues?q=is%3Aopen+is%3Aissue+label%3ADocs).
 
 
 ## Installation
@@ -63,6 +58,11 @@ pnpm cloudflare:preview
 
 Set `PNPM_VERSION` to `10.28.0` in the Workers Builds environment. Ruby and
 Node.js are selected from `.ruby-version` and `.node-version`.
+
+
+## Reporting Problems
+
+See a problem with the docs? Create a ticket in the [main dev repo's issue tracker](https://github.com/fullcalendar/fullcalendar/issues). All docs-related bugs have the [docs label](https://github.com/fullcalendar/fullcalendar/issues?q=is%3Aopen+is%3Aissue+label%3ADocs).
 
 
 ## Contributing
