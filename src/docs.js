@@ -1,28 +1,7 @@
-import docsearch from '@docsearch/js'
 import { querySelectorAll } from './lib/util'
-import '@docsearch/css'
 import './styles/docs.scss'
 
 document.addEventListener('DOMContentLoaded', function () {
-
-  // DocSearch
-  // ------------------------------------------------------------------------------------------
-
-  querySelectorAll('.control-search-button').forEach(function (searchButtonEl) {
-    var version = searchButtonEl.getAttribute('data-version')
-
-    docsearch({
-      appId: 'AGJMDAFLM6',
-      apiKey: '1964b0f1d600306bcf5a02eee797c5b5',
-      indexName: 'fullcalendar',
-
-      container: searchButtonEl,
-      searchParameters: {
-        // NOTE: we don't use 'version' because it's reserved and requires full x.x.x
-        facetFilters: ['major_version:' + version],
-      },
-    })
-  })
 
   // Version Chooser
   // ------------------------------------------------------------------------------------------

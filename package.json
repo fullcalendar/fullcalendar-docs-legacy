@@ -33,10 +33,6 @@
     "cloudflare:deploy": "wrangler deploy",
     "cloudflare:preview": "wrangler versions upload"
   },
-  "dependencies": {
-    "@docsearch/css": "3",
-    "@docsearch/js": "3"
-  },
   "devDependencies": {
     "globby": "^11.0.0",
     "lintspaces": "^0.6.4",
