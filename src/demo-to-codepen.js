@@ -32,7 +32,9 @@ document.addEventListener('DOMContentLoaded', function (event) {
   }
 
   querySelectorAll('a[data-codepen], button[data-codepen]').forEach(function (el) {
-    el.addEventListener('click', function () {
+    el.addEventListener('click', function (event) {
+      event.preventDefault()
+
       var url = el.getAttribute('data-codepen')
       openEditor(
         url ?
