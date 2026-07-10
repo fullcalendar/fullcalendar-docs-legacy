@@ -26,7 +26,6 @@ kramdown:
 
 baseurl: ''
 
-fullcalendar_site: https://fullcalendar-site.pages.dev
 fullcalendar_url: https://fullcalendar.io
 fullcalendar_org: https://github.com/fullcalendar
 fullcalendar_repo: https://github.com/fullcalendar/fullcalendar

@@ -6,7 +6,7 @@ class SiteDataDynamic < Jekyll::Generator
       if ENV.has_key?('SITE_URL')
         ENV['SITE_URL']
       else
-        site.config['fullcalendar_site']
+        site.config['fullcalendar_url']
       end
   end
 
