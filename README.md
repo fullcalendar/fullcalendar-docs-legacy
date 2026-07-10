@@ -1,7 +1,7 @@
 
 # FullCalendar Docs
 
-This repo contains the static content for [fullcalendar.io/docs](https://fullcalendar.io/docs)
+This repo contains static legacy documentation and release assets.
 
 Documentation articles are found in directories like `_docs-*`.
 
@@ -15,13 +15,6 @@ See a problem with the docs? Create a ticket in the [main dev repo's issue track
 
 ## Installation
 
-Clone this repo:
-
-```sh
-git clone git@github.com:fullcalendar/fullcalendar-docs.git
-cd fullcalendar-docs
-```
-
 Prerequisites:
 
 - Node.js 22.16 or later
@@ -29,13 +22,19 @@ Prerequisites:
 - Ruby 3.4
 - [RubyGems Bundler](https://bundler.io/)
 
-
-## CLI
+Run:
 
 ```sh
+# If you use RVM, select the Ruby version declared by .ruby-version:
+rvm use .
+
 bundle install
 pnpm install
+```
 
+## NPM Scripts
+
+```sh
 # watch & serve while developing
 pnpm dev
 
