@@ -18,6 +18,8 @@ exclude:
   - pnpm-lock.yaml
   - Gemfile
   - Gemfile.lock
+  # Avoid watching release symlinks during development; jekyll:build copies this into _site.
+  - releases
 
 markdown: kramdown
 kramdown:
@@ -28,6 +30,7 @@ baseurl: ''
 
 production_url: https://fullcalendar.io
 demo_feed_url: https://fullcalendar.io/api/demo-feeds
+docs_repo_url: https://github.com/fullcalendar/fullcalendar-docs-legacy
 repo_url: https://github.com/fullcalendar/fullcalendar
 premium_repo_url: https://github.com/fullcalendar/fullcalendar-workspace
 react_repo_url: https://github.com/fullcalendar/fullcalendar-react
