@@ -19,7 +19,6 @@
 }
 
 .topbar__branding,
-.topbar__notice,
 .topbar__github {
   flex-grow: 0;
 }
@@ -56,56 +55,13 @@ a.topbar__nav-handle {
   }
 }
 
-.topbar__flyout-wrap {
-  position: relative;
-  height: 0;
-}
-
-.topbar__flyout {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: $dark-bg-color;
-  border-top: 2px solid $blue-highlight-color;
-  padding: 6px 0;
-  min-width: 150px;
-}
-
-.topbar__nav-item:hover .topbar__flyout {
-  display: block;
-}
-
-.topbar__nav-handle,
-.topbar__flyout-handle {
+.topbar__nav-handle {
   display: block;
   font-weight: $font-weight-thin;
   white-space: nowrap;
 
   &:hover {
     color: $blue-highlight-color;
-  }
-}
-
-.topbar__flyout-handle {
-  padding: 8px 15px;
-}
-
-.topbar__notice {
-  padding-right: 20px;
-  font-size: 13px;
-}
-
-.topbar__notice-link {
-  font-weight: $font-weight-semibold;
-  color: #fff;
-  padding-bottom: 2px;
-  border-bottom: 2px solid $yellow-highlight-color;
-}
-
-.responsive-enabled {
-  .topbar__notice-link {
-    white-space: nowrap; // goes well with the h scrolling
   }
 }
 
@@ -119,11 +75,6 @@ a.topbar__nav-handle {
   color: #fff;
   display: flex;
   align-items: center;
-}
-
-.topbar__github-text {
-  font-size: 13px;
-  padding-right: 10px;
 }
 
 .topbar__github-graphic {

@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /v6/
 
 layout: docs-landing
 

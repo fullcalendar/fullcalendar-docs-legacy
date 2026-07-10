@@ -63,7 +63,7 @@ collections:
 
   docs-v6:
     output: true
-    permalink: /:slug
+    permalink: /v6/:slug
 
   docs-v5:
     output: true

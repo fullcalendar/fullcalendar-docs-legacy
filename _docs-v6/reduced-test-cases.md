@@ -5,11 +5,11 @@ layout: docs-article
 assets: [ 'demo-to-codepen.css', 'demo-to-codepen.js' ]
 codepen_templates:
   - label: Standard
-    demo_url: /initialize-globals-demo
-    feed_demo_url: /debug-json-feed
+    demo_url: /v6/initialize-globals-demo
+    feed_demo_url: /v6/debug-json-feed
   - label: Premium plugins
-    demo_url: /debug-scheduler
-    feed_demo_url: /debug-scheduler-json-feed
+    demo_url: /v6/debug-scheduler
+    feed_demo_url: /v6/debug-scheduler-json-feed
 framework_examples:
   - examples:
       - label: React
