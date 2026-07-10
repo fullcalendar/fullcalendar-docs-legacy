@@ -1,5 +1,6 @@
 ---
 title: Reduced Test Cases
+description: How to create a simplified, reproducible demonstration of a bug
 layout: docs-article
 assets: [ 'demo-to-codepen.css', 'demo-to-codepen.js' ]
 codepen_templates:

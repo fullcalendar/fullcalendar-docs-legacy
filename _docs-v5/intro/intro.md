@@ -7,6 +7,7 @@ children:
   - plugin-index
   - handlers
   - methods
+  - reduced-test-cases
   - title: More Advanced
     children:
       - css-customization
