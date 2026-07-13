@@ -5,6 +5,7 @@ permalink: /changelogs
 is_changelogs: true
 ---
 
+- [Version 6 → 7]({{ site.v6_to_v7_url }})
 - [Version 5 → 6]({{ site.baseurl }}/v6/upgrading-from-v5)
 - [Version 4 → 5]({{ site.baseurl }}/v5/upgrading-from-v4)
 - [Version 3 → 4]({{ site.baseurl }}/v4/upgrading-from-v3)
