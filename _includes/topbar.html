@@ -1,3 +1,11 @@
+{% if page.is_changelogs %}
+  {% assign selected_topbar_item = 'changelogs' %}
+{% elsif page.is_reduced_test_cases %}
+  {% assign selected_topbar_item = 'reduced_test_cases' %}
+{% else %}
+  {% assign selected_topbar_item = 'docs' %}
+{% endif %}
+
 <div class='topbar'>
   <div class='topbar__container container'>
 
@@ -10,16 +18,25 @@
 
     <div class='topbar__nav'>
       <div class='topbar__nav-item {%
-        unless page.is_reduced_test_cases
+        if selected_topbar_item == 'docs'
       %}topbar__nav-item--selected{%
-        endunless
+        endif
       %}'>
         <a class='topbar__nav-handle' href='{{ site.baseurl }}/'>
           Docs
         </a>
       </div>
       <div class='topbar__nav-item {%
-        if page.is_reduced_test_cases
+        if selected_topbar_item == 'changelogs'
+      %}topbar__nav-item--selected{%
+        endif
+      %}'>
+        <a class='topbar__nav-handle' href='{{ site.baseurl }}/changelogs'>
+          Changelogs
+        </a>
+      </div>
+      <div class='topbar__nav-item {%
+        if selected_topbar_item == 'reduced_test_cases'
       %}topbar__nav-item--selected{%
         endif
       %}'>

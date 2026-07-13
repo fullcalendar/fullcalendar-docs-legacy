@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var V2_WARNING_HTML =
     'Version 3 is nearly API-compatible with version 2. ' +
-    '<a href="/blog/2016/09/feature-packed-releases">More Information</a>' // TODO: use baseurl
+    '<a href="/v3/upgrading-from-v2">More Information</a>'
 
   querySelectorAll('.control-select__select').forEach(function (selectEl) {
 
