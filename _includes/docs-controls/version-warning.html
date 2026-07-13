@@ -1,5 +1,12 @@
 
-{% if page.version.id == "v5" %}
+{% if page.version.id == "v6" %}
+  <div id='docs-controls-warning'>
+    These docs are for an old release.
+    <a href='https://fullcalendar.io/docs/upgrading-from-v6'>
+      Info on upgrading to v7
+    </a>
+  </div>
+{% elsif page.version.id == "v5" %}
   <div id='docs-controls-warning'>
     These docs are for an old release.
     <a href='{{ site.baseurl }}/v6/upgrading-from-v5'>
