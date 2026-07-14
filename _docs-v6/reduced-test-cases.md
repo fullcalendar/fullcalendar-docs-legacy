@@ -21,7 +21,13 @@ framework_examples:
         url: https://stackblitz.com/github/fullcalendar/fullcalendar-examples/tree/v6/vue2
   - brave_note: true
     examples:
-      - label: Angular 19
+      - label: Angular 22
+        url: https://stackblitz.com/github/fullcalendar/fullcalendar-examples/tree/v6/angular22
+      - label: '21'
+        url: https://stackblitz.com/github/fullcalendar/fullcalendar-examples/tree/v6/angular21
+      - label: '20'
+        url: https://stackblitz.com/github/fullcalendar/fullcalendar-examples/tree/v6/angular20
+      - label: '19'
         url: https://stackblitz.com/github/fullcalendar/fullcalendar-examples/tree/v6/angular19
       - label: '18'
         url: https://stackblitz.com/github/fullcalendar/fullcalendar-examples/tree/v6/angular18
