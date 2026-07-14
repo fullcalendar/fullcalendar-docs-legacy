@@ -7,8 +7,8 @@ For non-trivial projects, it is recommended to use an ES6-compatible build syste
 
 Example repos:
 
-- [View the **Webpack** example repo &raquo;](https://github.com/fullcalendar/fullcalendar-examples/tree/main/webpack)
-- [View the **Rollup** example repo &raquo;](https://github.com/fullcalendar/fullcalendar-examples/tree/main/rollup)
+- [View the **Webpack** example repo &raquo;](https://github.com/fullcalendar/fullcalendar-examples/tree/v6/webpack)
+- [View the **Rollup** example repo &raquo;](https://github.com/fullcalendar/fullcalendar-examples/tree/v6/rollup)
 
 
 ## Initialize a Calendar with Plugins
@@ -77,5 +77,5 @@ calendar.render();
 
 Example repos:
 
-- [View the **Webpack** + **Scheduler** example repo &raquo;](https://github.com/fullcalendar/fullcalendar-examples/tree/main/webpack-scheduler)
-- [View the **Rollup** + **Scheduler** example repo &raquo;](https://github.com/fullcalendar/fullcalendar-examples/tree/main/rollup-scheduler)
+- [View the **Webpack** + **Scheduler** example repo &raquo;](https://github.com/fullcalendar/fullcalendar-examples/tree/v6/webpack-scheduler)
+- [View the **Rollup** + **Scheduler** example repo &raquo;](https://github.com/fullcalendar/fullcalendar-examples/tree/v6/rollup-scheduler)

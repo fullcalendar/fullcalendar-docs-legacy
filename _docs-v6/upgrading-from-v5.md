@@ -30,9 +30,9 @@ The primary goal of V6 is to solve bugs related to the *installation* of FullCal
 
 **DX:** FullCalendar no longer attempts to import `.css` files. Instead, FullCalendar's JS is responsible for injecting its own CSS. This solves many issues with third-party bundlers:
 
-- **Webpack**: no longer necessary to use css-loader (see [v6 example project](https://github.com/fullcalendar/fullcalendar-examples/blob/main/webpack/webpack.config.js))
-- **Rollup**: no longer necessary to use a css-processing plugin (like postcss) (see [v6 example project](https://github.com/fullcalendar/fullcalendar-examples/blob/main/rollup/rollup.config.js))
-- **NextJS**: no longer necessary to ignore and manually import .css files (see [v6 example project](https://github.com/fullcalendar/fullcalendar-examples/tree/main/next), [#6674])
+- **Webpack**: no longer necessary to use css-loader (see [v6 example project](https://github.com/fullcalendar/fullcalendar-examples/blob/v6/webpack/webpack.config.js))
+- **Rollup**: no longer necessary to use a css-processing plugin (like postcss) (see [v6 example project](https://github.com/fullcalendar/fullcalendar-examples/blob/v6/rollup/rollup.config.js))
+- **NextJS**: no longer necessary to ignore and manually import .css files (see [v6 example project](https://github.com/fullcalendar/fullcalendar-examples/tree/v6/next13), [#6674])
 
 **DX:** Overriding FullCalendar's CSS variables no longer [requires any build system configuration]({{ site.baseurl }}/v5/css-customization#css-variables). You can simply write CSS variables anywhere you'd like:
 
@@ -110,7 +110,7 @@ eventContent: function(arg) {
 
 ## Angular-specific Changes
 
-**Bugfix:** Support for Angular 14 and above has been restored ([angular-403], [v6 example project](https://github.com/fullcalendar/fullcalendar-examples/tree/main/angular15))
+**Bugfix:** Support for Angular 14 and above has been restored ([angular-403], [v6 example project](https://github.com/fullcalendar/fullcalendar-examples/tree/v6/angular15))
 
 **DX:** An Ivy library is now being published ([angular-396])
 

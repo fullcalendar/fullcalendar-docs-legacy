@@ -10,8 +10,8 @@ This package is released under an MIT license, the same license the standard ver
 - [Browse the Github repo]({{ site.vue_repo_url }}) (please star it!)
 - [Bug report instructions](/reporting-bugs)
 - Example projects:
-  - [Vue 2 example](https://github.com/fullcalendar/fullcalendar-examples/tree/main/vue2) (uses [Webpack] and [css-loader]) - [runnable](https://stackblitz.com/github/fullcalendar/fullcalendar-examples/tree/main/vue2)
-  - [Vue 3 example](https://github.com/fullcalendar/fullcalendar-examples/tree/main/vue3) (uses [Vite]) - [runnable](https://stackblitz.com/github/fullcalendar/fullcalendar-examples/tree/main/vue3)
+  - [Vue 2 example](https://github.com/fullcalendar/fullcalendar-examples/tree/v6/vue2) (uses [Webpack] and [css-loader]) - [runnable](https://stackblitz.com/github/fullcalendar/fullcalendar-examples/tree/v6/vue2)
+  - [Vue 3 example](https://github.com/fullcalendar/fullcalendar-examples/tree/v6/vue3) (uses [Vite]) - [runnable](https://stackblitz.com/github/fullcalendar/fullcalendar-examples/tree/v6/vue3)
 
 This guide does not go into depth about initializing a Vue project. Please consult the aforementioned example/runnable projects for that.
 
@@ -231,17 +231,17 @@ export default {
 
 For `@fullcalendar/vue3`, nothing special is needed for TypeScript integration.
 
-For `@fullcalendar/vue` (Vue 2), it is recommended to use [class-based components](https://github.com/vuejs/vue-class-component). See an <a href='https://github.com/fullcalendar/fullcalendar-examples/tree/main/vue2-typescript' class='more-link'>example TypeScript project</a>
+For `@fullcalendar/vue` (Vue 2), it is recommended to use [class-based components](https://github.com/vuejs/vue-class-component). See an <a href='https://github.com/fullcalendar/fullcalendar-examples/tree/v6/vue2-typescript' class='more-link'>example TypeScript project</a>
 
 
 ## Vuex
 
-[Vuex](https://vuex.vuejs.org/) is a popular state management library for Vue that works well with the FullCalendar connector. <a href='https://github.com/fullcalendar/fullcalendar-examples/tree/main/vue2-vuex' class='more-link'>View an example project</a>
+[Vuex](https://vuex.vuejs.org/) is a popular state management library for Vue that works well with the FullCalendar connector. <a href='https://github.com/fullcalendar/fullcalendar-examples/tree/v6/vue2-vuex' class='more-link'>View an example project</a>
 
 
 ## Nuxt
 
-If you plan to use the [Nuxt] Vue framework, you'll need special configuration. <a class='more-link' href='https://github.com/fullcalendar/fullcalendar-examples/tree/main/nuxt3'>See the example project</a>
+If you plan to use the [Nuxt] Vue framework, you'll need special configuration. <a class='more-link' href='https://github.com/fullcalendar/fullcalendar-examples/tree/v6/nuxt3'>See the example project</a>
 
 
 [Vue]: https://vuejs.org/

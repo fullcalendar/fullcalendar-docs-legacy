@@ -10,14 +10,14 @@ This component is built and maintained by [irustm](https://github.com/irustm) in
 - [Browse the Github repo]({{ site.angular_repo_url }}) (please star it!)
 - [Bug report instructions](/reporting-bugs)
 - Example projects:
-  [Angular 19](https://github.com/fullcalendar/fullcalendar-examples/tree/main/angular19)
-  | [18](https://github.com/fullcalendar/fullcalendar-examples/tree/main/angular18)
-  | [17](https://github.com/fullcalendar/fullcalendar-examples/tree/main/angular17)
-  | [16](https://github.com/fullcalendar/fullcalendar-examples/tree/main/angular16)
-  | [15](https://github.com/fullcalendar/fullcalendar-examples/tree/main/angular15)
-  | [14](https://github.com/fullcalendar/fullcalendar-examples/tree/main/angular14)
-  | [13](https://github.com/fullcalendar/fullcalendar-examples/tree/main/angular13)
-  | [12](https://github.com/fullcalendar/fullcalendar-examples/tree/main/angular12)
+  [Angular 19](https://github.com/fullcalendar/fullcalendar-examples/tree/v6/angular19)
+  | [18](https://github.com/fullcalendar/fullcalendar-examples/tree/v6/angular18)
+  | [17](https://github.com/fullcalendar/fullcalendar-examples/tree/v6/angular17)
+  | [16](https://github.com/fullcalendar/fullcalendar-examples/tree/v6/angular16)
+  | [15](https://github.com/fullcalendar/fullcalendar-examples/tree/v6/angular15)
+  | [14](https://github.com/fullcalendar/fullcalendar-examples/tree/v6/angular14)
+  | [13](https://github.com/fullcalendar/fullcalendar-examples/tree/v6/angular13)
+  | [12](https://github.com/fullcalendar/fullcalendar-examples/tree/v6/angular12)
 
 This guide does not go into depth about initializing an Angular project. Please consult the aforementioned example/runnable projects for that.
 
@@ -137,7 +137,7 @@ Template:
 ></full-calendar>
 ```
 
-This technique is commonly used when working with [NgRx](https://ngrx.io/). [View a sample project &raquo;](https://github.com/fullcalendar/fullcalendar-examples/tree/main/angular15-ngrx)
+This technique is commonly used when working with [NgRx](https://ngrx.io/). [View a sample project &raquo;](https://github.com/fullcalendar/fullcalendar-examples/tree/v6/angular15-ngrx)
 
 
 ### Modifying Properties
@@ -282,8 +282,8 @@ and the template:
 
 [Angular]: https://angular.io/
 [Angular CLI]: https://cli.angular.io/
-[app.component.ts]: https://github.com/fullcalendar/fullcalendar-examples/blob/main/angular19/src/app/app.component.ts
-[app.component.scss]: https://github.com/fullcalendar/fullcalendar-examples/blob/main/angular19/src/app/app.component.scss
-[app.component.html]: https://github.com/fullcalendar/fullcalendar-examples/blob/main/angular19/src/app/app.component.html
+[app.component.ts]: https://github.com/fullcalendar/fullcalendar-examples/blob/v6/angular19/src/app/app.component.ts
+[app.component.scss]: https://github.com/fullcalendar/fullcalendar-examples/blob/v6/angular19/src/app/app.component.scss
+[app.component.html]: https://github.com/fullcalendar/fullcalendar-examples/blob/v6/angular19/src/app/app.component.html
 [component options]: https://github.com/fullcalendar/fullcalendar-angular/blob/main/lib/src/options.ts
 [ViewChild]: https://angular.io/api/core/ViewChild
