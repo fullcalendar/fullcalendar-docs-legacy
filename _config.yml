@@ -28,7 +28,7 @@ kramdown:
 
 baseurl: ''
 
-production_url: https://fullcalendar.io
+prod_url: https://fullcalendar.io
 v6_to_v7_url: https://fullcalendar.io/docs/upgrading-from-v6
 demo_feed_url: https://fullcalendar.io/api/demo-feeds
 docs_repo_url: https://github.com/fullcalendar/fullcalendar-docs-legacy
