@@ -1,0 +1,115 @@
+@use '../variables' as *;
+@use './variables' as *;
+
+.hp-intro-section {
+  position: relative;
+  z-index: $hp-intro-z;
+  background-image: linear-gradient(
+    to left,
+    rgba(55, 117, 203, 0.2) 0%,
+    rgba(130, 215, 247, 0.12) 40%,
+    rgba(242, 201, 115, 0.01) 100%
+  );
+}
+
+// split layout
+// ----------------------------------------------------------------------------------------------------
+
+@media only screen and (max-width: $tablet-breakpoint - 1) {
+  // <tablet
+  .hp-intro-verbage {
+    text-align: center;
+  }
+
+  .hp-intro-demo {
+    align-self: center;
+  }
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+  // >=tablet
+  .hp-intro-verbage {
+    align-self: center;
+  }
+
+  .hp-intro-demo {
+    align-self: flex-end;
+    min-height: 390px;
+    margin-top: 7%; // percentage of height
+  }
+}
+
+// text subsection on left
+// ----------------------------------------------------------------------------------------------------
+
+.hp-intro-verbage {
+  position: relative;
+  z-index: 2; // above calendar glow
+  margin: 2em 0;
+
+  h1 {
+    line-height: 1.25;
+    font-size: 1.8em;
+    font-weight: 100;
+
+    strong {
+      display: block;
+      margin-top: 10px;
+      font-size: calc(clamp(2em, 6.5vw, 2.4em));
+      font-weight: $font-weight-superbold;
+    }
+  }
+}
+
+.hp-intro-verbage__buttons {
+  margin-top: 2em;
+}
+
+.hp-intro-verbage__demo-button {
+  margin-left: 1em;
+}
+
+// demo subsection on right
+// ----------------------------------------------------------------------------------------------------
+
+.hp-intro-demo {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: $hp-calendar-max-width;
+  border-top: 2px solid $hp-yellow;
+  background: #fff;
+  box-shadow: 0 0 356px 0 rgba(130, 215, 247, 0.5);
+}
+
+.hp-intro-demo__calendar {
+  margin: 10px;
+  background: url('../../assets/homepage/calendar.png?2') no-repeat 0 0;
+  background-size: contain;
+  padding-bottom: 77%; // creates aspect ratio
+}
+
+.hp-intro-demo__buttons {
+  position: absolute;
+  bottom: 87px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+// hiding/showing "view demos" buttons
+// ----------------------------------------------------------------------------------------------------
+
+@media only screen and (max-width: $desktop-breakpoint - 1) {
+  // <desktop
+  .hp-intro-verbage__demo-button {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $desktop-breakpoint) {
+  // >=desktop
+  .hp-intro-demo__buttons {
+    display: none;
+  }
+}

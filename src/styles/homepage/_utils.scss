@@ -1,0 +1,9 @@
+@use './variables' as hp-variables;
+
+.hp-skew {
+  transform: skewY(hp-variables.$hp-skew-angle);
+}
+
+.hp-dark-bg {
+  color: #fff;
+}

@@ -1,0 +1,250 @@
+@use '../variables' as *;
+@use './variables' as *;
+@use './divider' as *;
+
+.hp-mountain-section {
+  .hp-section__fg {
+    z-index: $hp-mountain-fg-z;
+  }
+
+  .hp-divider {
+    z-index: $hp-mountain-divider-z;
+  }
+
+  .hp-divider:first-child {
+    @include hp-divider-colors(#e6e6e6, $hp-lightblue);
+  }
+}
+
+// split layout and spacing
+// ----------------------------------------------------------------------------------------------------
+
+.hp-mountain-section .hp-split {
+  min-height: calc(min(60vw, 630px));
+}
+
+@media only screen and (max-width: $tablet-breakpoint - 1) {
+  // <tablet
+  .hp-mountain-section .hp-split {
+    align-items: center;
+  }
+
+  .hp-mountain-logos {
+    margin: 1em 0;
+  }
+
+  .hp-mountain-stats {
+    margin: 7em 2em 2em 0;
+  }
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+  // >=tablet
+  .hp-mountain-section .hp-split {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .hp-mountain-logos {
+    align-self: flex-start;
+    flex-basis: 60%;
+    max-width: 675px;
+  }
+
+  .hp-mountain-stats {
+    align-self: center;
+    margin-top: 2em;
+    flex-basis: 40%;
+  }
+}
+
+// color bg
+// ----------------------------------------------------------------------------------------------------
+
+.hp-mountain-section__color-bg {
+  z-index: $hp-mountain-color-bg-z;
+}
+
+.hp-mountain-section__color-bg {
+  background: linear-gradient(205deg, #fff 0%, #b5b5b5 100%);
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+  // >=tablet
+  .hp-mountain-section__color-bg {
+    background: #fff;
+  }
+}
+
+// mountain image background
+// ----------------------------------------------------------------------------------------------------
+
+.hp-mountain-image-bg {
+  z-index: $hp-mountain-image-bg-z;
+  top: auto; // allow top to overflow instead of top:0
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hp-mountain-image-bg__left,
+.hp-mountain-image-bg__right {
+  content: '';
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.hp-mountain-image-bg__center {
+  position: relative;
+  width: 100%;
+  max-width: $container-max-width;
+
+  div {
+    position: relative;
+    float: left;
+    left: 12.5%; // where we want the peak to be located within the container
+  }
+
+  img {
+    display: block;
+    margin-left: -28%; // where the peak is within the image
+  }
+}
+
+@media only screen and (max-width: $tablet-breakpoint - 1) {
+  // <tablet
+  .hp-mountain-image-bg__center {
+    div {
+      left: 46%; // where we want the peak to be located within the container
+    }
+
+    img {
+      max-height: 500px !important;
+      width: auto !important;
+      max-width: none !important;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+  // >=tablet
+  .hp-mountain-image-bg__left {
+    height: 458px;
+    background: #4d4d4d;
+  }
+
+  .hp-mountain-image-bg__center {
+    img {
+      max-height: 70vw !important;
+      width: auto !important;
+      max-width: none !important;
+    }
+  }
+
+  .hp-mountain-image-bg__right {
+    height: 66px;
+    background: $hp-yellow;
+  }
+}
+
+// stats area
+// ----------------------------------------------------------------------------------------------------
+
+.hp-mountain-stats {
+  font-size: 1.1em;
+  animation: hp-stats-enter ease-out $hp-animation-duration-slow;
+}
+
+.hp-mountain-stats__item {
+  color: #fff;
+  margin: 1em 0;
+
+  strong {
+    font-weight: $font-weight-superbold;
+  }
+
+  h4 {
+    font-size: 1.8em;
+    font-weight: $font-weight-superbold;
+    color: $hp-yellow;
+    margin-bottom: -0.5em;
+
+    strong {
+      font-size: 1.5em;
+      color: $hp-lightblue;
+      text-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+// logos area
+// ----------------------------------------------------------------------------------------------------
+
+$hp-mountain-logo-pad-v: 3%; // percentage of width
+$hp-mountain-logo-pad-h: 5%; // "
+
+.hp-mountain-logos {
+  overflow: hidden; // hide .logo overflow
+  animation: hp-logos-enter ease-out $hp-animation-duration-slow;
+}
+
+.hp-mountain-logos__title {
+  margin: 1.3em 0 1.7em;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: $font-weight-superbold;
+  color: $hp-blue;
+}
+
+.hp-mountain-logos__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin: ($hp-mountain-logo-pad-v * -1) ($hp-mountain-logo-pad-h * -1);
+
+  div {
+    width: 25%;
+    padding: $hp-mountain-logo-pad-v $hp-mountain-logo-pad-h;
+  }
+
+  img {
+    // within the div
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+  // >=tablet
+  .hp-mountain-logos__content {
+    justify-content: flex-end;
+  }
+}
+
+// animations
+// ----------------------------------------------------------------------------------------------------
+
+@keyframes hp-stats-enter {
+  0% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes hp-logos-enter {
+  0% {
+    transform: translate(0, -20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}

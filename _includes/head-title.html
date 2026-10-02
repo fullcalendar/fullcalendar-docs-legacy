@@ -1,17 +1,18 @@
 <title>
-  {% if page.is_docs %}
+  {% if page.full_title %}
+    {{ page.full_title | escape }}
+  {% elsif page.is_docs %}
     {% if page.slug == 'index' %}
       Documentation
     {% else %}
       {{ page.title | escape }} - Docs
     {% endif %}
     {% if page.version %}
-      {% unless page.version.is_latest %}
-        {{ page.version.id | escape }}
-      {% endunless %}
+      {{ page.version.id | escape }}
     {% endif %}
+    | FullCalendar
   {% else %}
     {{ page.title | escape }}
+    | FullCalendar {% if page.layout == 'blog-post' %}Blog{% endif %}
   {% endif %}
-  | FullCalendar {% if page.layout == 'blog-post' %}Blog{% endif %}
 </title>

@@ -1,0 +1,332 @@
+@use 'sass:math';
+@use '../variables' as *;
+@use './variables' as *;
+@use './mixins' as hp-mixins;
+@use './divider' as divider;
+
+$hp-space-bg-color: #191a1e;
+
+.hp-space-section {
+  margin-top: -50px;
+
+  .hp-section__bg {
+    z-index: $hp-space-bg-z;
+  }
+
+  .hp-section__fg {
+    z-index: $hp-space-fg-z;
+  }
+
+  .hp-divider {
+    z-index: $hp-space-divider-z;
+  }
+
+  .hp-divider:first-child {
+    @include divider.hp-divider-colors(#000, $hp-yellow);
+  }
+
+  .hp-divider:last-child {
+    @include divider.hp-divider-colors(#000, #01133f);
+    background: #000; // hack. without this, appears jagged in Safari
+  }
+}
+
+// backgrounds
+// ----------------------------------------------------------------------------------------------------
+
+.hp-space-section__color-bg {
+  background: $hp-space-bg-color;
+}
+
+.hp-space-section__image-bg {
+  background: url('../../assets/homepage/stars.svg') no-repeat 0 0;
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+  // >=tablet
+  .hp-space-section__image-bg {
+    background-position: 50% 50%;
+  }
+}
+
+// split layout
+// ----------------------------------------------------------------------------------------------------
+
+.hp-space-section .hp-section__fg .hp-split {
+  // NOT the bg containers
+  min-height: calc(min(60vw, 600px));
+  align-items: center;
+}
+
+.hp-space-bg-container {
+  display: flex;
+  justify-content: center; // for mobile
+  height: 90%;
+  max-height: 45vw;
+}
+
+.hp-space-editor-bg,
+.hp-space-editor {
+  width: 100%; // more mobile
+  max-width: $hp-calendar-max-width;
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+  // >=tablet
+  .hp-space-bg-container {
+    justify-content: flex-end;
+  }
+
+  .hp-space-editor-bg,
+  .hp-space-editor {
+    width: 50%;
+  }
+}
+
+// code editor
+// ----------------------------------------------------------------------------------------------------
+
+.hp-space-editor-bg {
+  background: #000;
+}
+
+.hp-space-editor {
+  position: relative;
+  color: rgba(255, 255, 255, 0.2);
+  font-family: monospace;
+  font-size: 0.9em;
+  line-height: 1.7;
+  display: flex;
+  user-select: none;
+
+  &:after {
+    @include hp-mixins.expand-absolute;
+    left: -1px; // hack for not covering leftmost pixel in FF
+    content: '';
+    transform: skewY($hp-skew-angle); // in mobile, need to match angle
+    background-image: linear-gradient(
+      177deg,
+      rgba($hp-space-bg-color, 0) 10%,
+      $hp-space-bg-color 80%
+    );
+  }
+}
+
+.hp-space-editor__line-numbers {
+  flex-grow: 0;
+  width: 44px;
+  overflow: hidden;
+  text-align: right;
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+  // >=tablet
+  .hp-space-editor__line-numbers {
+    width: 70px;
+  }
+}
+
+.hp-space-editor__code-area {
+  position: relative;
+  flex-grow: 1;
+  margin-left: 10px; // space from line-number
+  margin-bottom: 10px; // allow angled gradient bg to cover
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.hp-space-editor__code {
+  @include hp-mixins.expand-absolute;
+  animation: hp-fade-in ease-in $hp-animation-duration-fast;
+  display: none;
+}
+
+.hp-space-editor__code--selected {
+  display: block;
+}
+
+// text area on left
+// ----------------------------------------------------------------------------------------------------
+
+.hp-space-verbage {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  align-items: center;
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+  // >=tablet
+  .hp-space-verbage {
+    margin-right: 4em;
+  }
+}
+
+.hp-space-verbage__item {
+  animation: hp-fade-in ease-in $hp-animation-duration-fast;
+}
+
+// selector on right
+// ----------------------------------------------------------------------------------------------------
+
+.hp-space-selector {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 50%;
+  max-width: $hp-calendar-max-width;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  user-select: none;
+}
+
+.hp-space-selector__item {
+  padding: 15px 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+// mobile accordion selector
+// ----------------------------------------------------------------------------------------------------
+
+@media only screen and (max-width: $tablet-breakpoint - 1) {
+  // <tablet
+  .hp-space-section .hp-section__fg .hp-split {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+  // >=tablet
+  .hp-tech-accordion {
+    display: none;
+  }
+}
+
+$hp-accordion-toggle-width: 20px;
+$hp-accordion-toggle-line-thickness: 2px;
+
+.hp-tech-accordion {
+  margin: 2em 0;
+}
+
+.hp-tech-accordion__item-head {
+  position: relative; // for toggle
+  display: flex;
+  align-items: center;
+  font-size: 0.7em; // size down the large title-like items within
+  cursor: pointer;
+}
+
+.hp-tech-accordion__item-head,
+.hp-tech-accordion__item-body {
+  padding: 1.5em 0;
+  border-bottom: 2px solid #000;
+}
+
+.hp-tech-accordion__item-toggle {
+  // within the head
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: $hp-accordion-toggle-width;
+  height: $hp-accordion-toggle-width;
+  margin-top: -(math.div($hp-accordion-toggle-width, 2));
+  transition:
+    transform ease-out $hp-animation-duration-fast,
+    background-color ease-out $hp-animation-duration-fast;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+  }
+
+  &:before {
+    top: math.div($hp-accordion-toggle-width, 2) - math.div($hp-accordion-toggle-line-thickness, 2);
+    left: 0;
+    right: 0;
+    height: $hp-accordion-toggle-line-thickness;
+  }
+
+  &:after {
+    top: 0;
+    left: math.div($hp-accordion-toggle-width, 2) - math.div($hp-accordion-toggle-line-thickness, 2);
+    width: $hp-accordion-toggle-line-thickness;
+    bottom: 0;
+  }
+}
+
+.hp-tech-accordion__item-toggle--selected {
+  transform: rotate(45deg);
+  &:before,
+  &:after {
+    background-color: $hp-yellow;
+  }
+}
+
+.hp-tech-accordion__item-body {
+  animation: hp-accordion-body-enter ease-out $hp-animation-duration-fast;
+}
+
+// util classes for each tech
+// ----------------------------------------------------------------------------------------------------
+
+$hp-tech-icon-width-large: 68px;
+$hp-tech-icon-width-small: 50px;
+
+.hp-tech-icon {
+  @include hp-mixins.button-bg-color($hp-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $hp-tech-icon-width-large;
+  height: $hp-tech-icon-width-large;
+  border-radius: math.div($hp-tech-icon-width-large, 2);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 50% 50%;
+  vertical-align: middle;
+  margin-right: 1em;
+  box-shadow: 0 1px 10px #000;
+}
+
+.hp-tech-icon--small {
+  width: $hp-tech-icon-width-small;
+  height: $hp-tech-icon-width-small;
+  border-radius: math.div($hp-tech-icon-width-small, 2);
+
+  > img {
+    transform: scale(0.75);
+  }
+}
+
+.hp-tech-icon--selected {
+  @include hp-mixins.button-bg-color($hp-yellow);
+}
+
+.hp-tech-title {
+  font-size: 1.7em;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #000;
+  font-weight: 100;
+}
+
+.hp-tech-title--selected {
+  font-weight: $font-weight-bold;
+}
+
+// animations
+// ----------------------------------------------------------------------------------------------------
+
+@keyframes hp-accordion-body-enter {
+  0% {
+    transform: translate(0, -20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

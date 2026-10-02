@@ -1,0 +1,22 @@
+@keyframes hp-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hp-animation-trigger {
+  &,
+  .hp-animation {
+    animation-play-state: paused !important;
+  }
+}
+
+.hp-animation-trigger--triggered {
+  &,
+  .hp-animation {
+    animation-play-state: running !important;
+  }
+}

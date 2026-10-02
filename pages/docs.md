@@ -1,7 +1,7 @@
 ---
 title: Documentation
 layout: text
-permalink: /
+permalink: /docs
 ---
 
 - [Version 6]({{ site.baseurl }}/v6)

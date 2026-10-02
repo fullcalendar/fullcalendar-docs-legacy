@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1972px" height="850px" viewBox="0 0 1972 850" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>sky</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0.726491158" width="1972" height="850"></rect>
+        <linearGradient x1="49.9997289%" y1="73.1295956%" x2="49.9997289%" y2="13.1847426%" id="linearGradient-3">
+            <stop stop-color="#82D7F7" stop-opacity="0.87" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="23.6703316%" y1="46.6891711%" x2="79.3443922%" y2="49.9858969%" id="linearGradient-4">
+            <stop stop-color="#1B1464" stop-opacity="0.8" offset="0%"></stop>
+            <stop stop-color="#1F29C0" stop-opacity="0.654474432" offset="40.068127%"></stop>
+            <stop stop-color="#3775CB" stop-opacity="0" offset="61.4155376%"></stop>
+            <stop stop-color="#F2C973" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="11.1756084%" y1="53.3566419%" x2="88.3318665%" y2="53.4752767%" id="linearGradient-5">
+            <stop stop-color="#000000" offset="0.0422297297%"></stop>
+            <stop stop-color="#1F243B" stop-opacity="0.65502076" offset="37.7942201%"></stop>
+            <stop stop-color="#3775CB" stop-opacity="0" offset="60.5792712%"></stop>
+            <stop stop-color="#F2C973" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="49.9990185%" cy="50.6263248%" fx="49.9990185%" fy="50.6263248%" r="138.92854%" gradientTransform="translate(0.499990,0.506263),scale(0.262864,1.000000),scale(1.000000,0.387989),translate(-0.499990,-0.506263)" id="radialGradient-6">
+            <stop stop-color="#F2C973" offset="0%"></stop>
+            <stop stop-color="#F2C973" stop-opacity="0.83" offset="9%"></stop>
+            <stop stop-color="#F2C973" stop-opacity="0.61" offset="22%"></stop>
+            <stop stop-color="#F2C973" stop-opacity="0.42" offset="35%"></stop>
+            <stop stop-color="#F2C973" stop-opacity="0.27" offset="49%"></stop>
+            <stop stop-color="#F2C973" stop-opacity="0.15" offset="62%"></stop>
+            <stop stop-color="#F2C973" stop-opacity="0.07" offset="75%"></stop>
+            <stop stop-color="#F2C973" stop-opacity="0.02" offset="87%"></stop>
+            <stop stop-color="#F2C973" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="0.984379845%" y1="51.9444481%" x2="88.961034%" y2="51.9840849%" id="linearGradient-7">
+            <stop stop-color="#000000" stop-opacity="0.923833717" offset="0%"></stop>
+            <stop stop-color="#262F80" stop-opacity="0.857469806" offset="11.5234375%"></stop>
+            <stop stop-color="#376ECB" stop-opacity="0.7" offset="42.6053902%"></stop>
+            <stop stop-color="#3D78C8" stop-opacity="0.68" offset="43.9438625%"></stop>
+            <stop stop-color="#4F80C0" stop-opacity="0.62" offset="45.2299396%"></stop>
+            <stop stop-color="#6D8DB2" stop-opacity="0.53" offset="47.7871282%"></stop>
+            <stop stop-color="#96A09E" stop-opacity="0.39" offset="50.1355474%"></stop>
+            <stop stop-color="#CBB885" stop-opacity="0.22" offset="51.1045461%"></stop>
+            <stop stop-color="#F2C973" stop-opacity="0.1" offset="52.1842625%"></stop>
+            <stop stop-color="#B2D1BE" stop-opacity="0.4" offset="71%"></stop>
+            <stop stop-color="#82D7F7" stop-opacity="0.62" offset="91%"></stop>
+            <stop stop-color="#82D7F7" stop-opacity="0.78" offset="96%"></stop>
+            <stop stop-color="#82D7F7" stop-opacity="0.87" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Fullcal-home" transform="translate(-91.000000, -1116.000000)">
+            <g id="Powerful-Lightweight" transform="translate(91.000000, 1115.000000)">
+                <g id="sky" transform="translate(0.000000, 0.273509)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="white-bg" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="updown-gradient" fill="url(#linearGradient-3)" fill-rule="nonzero" mask="url(#mask-2)" x="113" y="0.726491158" width="1909" height="850"></rect>
+                    <polygon id="middle-gradient" fill="url(#linearGradient-4)" fill-rule="nonzero" opacity="0.6" mask="url(#mask-2)" points="114 850.726491 114 0.726491158 1856.60537 0.726491158 1856.60537 850.726491"></polygon>
+                    <polygon id="left-gradient" fill="url(#linearGradient-5)" fill-rule="nonzero" mask="url(#mask-2)" points="-0.324246544 850.726491 -0.134043955 0.726491158 2021.67575 0.726491158 2021.18117 846.726491"></polygon>
+                    <ellipse id="lightning-circle" fill="url(#radialGradient-6)" fill-rule="nonzero" mask="url(#mask-2)" cx="914" cy="254.226491" rx="447" ry="117.5"></ellipse>
+                    <path d="M1853.32031,0.726491158 C1816,0.726491158 1765.67617,33.6575373 1753.74907,80.6720391 C1739.72914,84.9129945 1726.50327,91.4283531 1714.60122,99.9571493 C1691.8026,92.3298308 1666.76469,95.5129882 1646.60672,108.60153 C1626.44875,121.690072 1613.37586,143.252201 1611.10516,167.156993 C1596.42351,159.38513 1578.73879,159.858805 1564.49538,168.405409 C1550.25197,176.952013 1541.53008,192.323343 1541.50799,208.918022 C1541.50799,209.680661 1541.50799,210.425767 1541.56943,211.170874 C1527.8979,215.566625 1516.95242,225.904698 1511.79599,239.292071 C1510.86557,239.931986 1509.93515,240.589433 1509.01351,241.24688 C1500.33214,233.433325 1489.05717,229.113574 1477.37045,229.123558 C1476.36104,229.123558 1475.36917,229.167388 1474.37731,229.22875 C1458.30726,210.323285 1433.25363,201.579093 1408.89033,206.372555 C1384.52703,211.166017 1364.66656,228.747024 1356.97762,252.327052 C1350.11506,252.399637 1343.30505,253.532154 1336.78926,255.684415 C1301.39082,233.603008 1255.63493,237.570623 1224.5771,265.414629 C1205.2665,245.472072 1172.41214,221.023812 1113.56746,220.006961 C1043.77719,218.81479 988.926297,254.509776 974.575007,314.495235 C974.67156,312.978724 962.611211,281.254718 920.593094,274.390971 C874.300311,266.834715 854.94582,306.228935 848.941978,325.233535 C854.94582,306.237701 844.553204,294.552678 834.134256,294.552678 C830.201915,294.552678 823.144767,295.429274 821.213707,303.222211 C807.985943,279.974888 786.27907,260.98782 757.594046,260.98782 C727.84694,260.98782 715.970919,271.875141 696.230215,295.551997 C686.416918,283.972165 657.073578,214.537002 558.958158,214.537002 C493.030003,214.537002 453.732925,240.83488 431.271182,273.926376 C429.436675,276.635057 427.277399,278.958036 421.615881,287.715229 C397.459653,277.910291 370.193852,279.304888 347.167052,291.523154 C324.140252,303.74142 307.722188,325.525948 302.337795,351.005455 C299.559267,350.509653 296.742654,350.257402 293.920127,350.251582 C290.39669,350.252636 286.884388,350.646623 283.448514,351.426221 C280.209599,328.450642 252.551549,310.778468 228.659066,310.778468 C204.503256,310.778468 174.914146,328.836344 172,352.171327 C132.666667,352.171327 113.054688,375.689715 113.164062,422.726491 C113.164062,422.726491 73.4541964,408.86206 53.7734375,436.392507 C48.3844969,443.930831 40.3691406,457.126882 45.3271484,485.634694 C45.3271484,485.634694 0,486.510671 0,523.252858 C4.19668574e-15,554.54204 4.19668574e-15,663.699917 0,850.726491 L2022,850.726491 L2025,-0.273508842 C1935.42708,0.393157825 1878.20052,0.726491158 1853.32031,0.726491158 Z" id="best-clouds" fill="url(#linearGradient-7)" fill-rule="nonzero" opacity="0.4" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,33 @@
+$hp-calendar-max-width: 600px;
+$hp-skew-angle: -4deg;
+$hp-divider-height: 28px;
+$hp-footer-color: #101010;
+
+$hp-animation-duration-slow: 1s;
+$hp-animation-duration-fast: 250ms;
+
+$hp-lightblue: #82d7f7;
+$hp-blue: #3775cb;
+$hp-yellow: #f2c973;
+
+// z-indexes
+// ----------------------------------------------------------------------------------------------------
+
+$hp-intro-z: 1;
+
+$hp-space-bg-z: 3;
+$hp-space-fg-z: 4;
+$hp-space-divider-z: 5;
+
+$hp-sky-bg-z: 1;
+$hp-sky-fg-z: 2;
+
+$hp-mountain-color-bg-z: 3;
+$hp-mountain-divider-z: 4;
+$hp-mountain-image-bg-z: 5;
+$hp-mountain-fg-z: 6; // needs to be above ocean fg
+
+$hp-ocean-top-divider-z: 3;
+$hp-ocean-bg-z: 4;
+$hp-ocean-fg-z: 5;
+$hp-ocean-bottom-divider-z: 6;

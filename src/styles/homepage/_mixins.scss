@@ -1,0 +1,21 @@
+@use 'sass:color';
+
+@mixin expand-absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+@mixin button-bg-color($color) {
+  background-color: $color;
+
+  &:hover {
+    background-color: color.adjust($color, $lightness: -10%);
+  }
+
+  &:active {
+    background-color: color.adjust($color, $lightness: 10%);
+  }
+}

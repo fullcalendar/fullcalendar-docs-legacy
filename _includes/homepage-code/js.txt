@@ -1,0 +1,17 @@
+npm install @fullcalendar/core
+npm install @fullcalendar/daygrid
+
+import { Calendar } from '@fullcalendar/core'
+import dayGridPlugin from '@fullcalendar/daygrid'
+
+let calendar = new Calendar(calendarEl, {
+  plugins: [dayGridPlugin],
+  initialView: 'dayGridMonth',
+  headerToolbar: {
+    left: 'prev,next today',
+    center: 'title',
+    right: 'dayGridMonth,dayGridWeek'
+  }
+})
+
+calendar.render()

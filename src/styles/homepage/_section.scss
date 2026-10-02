@@ -1,0 +1,30 @@
+@use './mixins' as *;
+
+.hp-section {
+  > .hp-divider {
+    position: relative; // for easy z-index assignment
+
+    &:first-child {
+      margin-bottom: -1px;
+    }
+    &:last-child {
+      margin-top: -1px;
+    }
+  }
+}
+
+.hp-section__inner {
+  position: relative;
+  display: flex; // for clearfix
+  flex-direction: column;
+}
+
+.hp-section__bg {
+  @include expand-absolute;
+}
+
+.hp-section__fg {
+  position: relative; // for easy z-index assignment
+  display: flex; // for clearfix
+  flex-direction: column;
+}

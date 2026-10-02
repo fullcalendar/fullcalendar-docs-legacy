@@ -1,0 +1,21 @@
+@use '../variables' as *;
+
+.hp-split {
+  display: flex;
+  flex-direction: column;
+
+  > * {
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+  // >=tablet
+  .hp-split {
+    flex-direction: row;
+
+    > * {
+      flex-basis: 0; // equal expansion
+    }
+  }
+}

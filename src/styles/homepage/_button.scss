@@ -1,0 +1,53 @@
+@use 'sass:math';
+@use '../variables' as vars;
+@use './mixins' as mixins;
+@use './variables' as hp-vars;
+
+$hp-height: 3.1em;
+
+.hp-button {
+  display: inline-block;
+  font-size: 0.9em;
+  font-weight: vars.$font-weight-superbold;
+  height: $hp-height;
+  line-height: $hp-height;
+  padding: 0 math.div($hp-height, 2);
+  border-radius: math.div($hp-height, 2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 100ms;
+}
+
+.hp-button--blue {
+  @include mixins.button-bg-color(hp-vars.$hp-blue); // only for light bg
+  color: #fff; // only for light bg
+  box-shadow: 0 4px 14px rgba(hp-vars.$hp-blue, 0.5);
+}
+
+.hp-button--yellow {
+  @include mixins.button-bg-color(hp-vars.$hp-yellow);
+  color: vars.$font-color;
+  box-shadow: 0 4px 14px rgba(247, 206, 130, 0.5);
+}
+
+.hp-dark-bg {
+  .hp-button {
+    box-shadow: 0 4px 14px #000; // for all colors
+  }
+
+  .hp-button--mild-shadow {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+  }
+
+  .hp-button--blue {
+    // blue buttons should appear lighter on dark backgrounds
+    @include mixins.button-bg-color(hp-vars.$hp-lightblue);
+    color: vars.$font-color;
+  }
+}
+
+.hp-neutral-bg {
+  .hp-button--blue {
+    box-shadow: 0 4px 14px rgba(#3f8ca8, 0.5);
+  }
+}

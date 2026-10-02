@@ -1,0 +1,28 @@
+@use '../variables' as *;
+
+.hp-section {
+  font-size: 16px;
+}
+
+@media only screen and (min-width: $desktop-breakpoint) {
+  // >=tablet
+  .hp-section {
+    font-size: 18px;
+  }
+}
+
+.hp-section-title {
+  font-size: 2em;
+  font-weight: $font-weight-superbold;
+  margin-bottom: 0.5em;
+}
+
+.hp-section-desc {
+  margin-bottom: 1.8em;
+}
+
+.hp-dark-bg {
+  .hp-section-desc {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  }
+}

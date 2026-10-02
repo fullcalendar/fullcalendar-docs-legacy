@@ -5,6 +5,7 @@ import { defineConfig } from 'vite'
 const projectRoot = path.dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig(({ mode }) => ({
+  base: '/dist/', // where outDir is served, so emitted asset URLs resolve
   css: {
     preprocessorOptions: {
       scss: {
@@ -25,6 +26,7 @@ export default defineConfig(({ mode }) => ({
       input: {
         base: path.resolve(projectRoot, 'src/styles/base.scss'),
         docs: path.resolve(projectRoot, 'src/docs.js'),
+        homepage: path.resolve(projectRoot, 'src/homepage.js'),
         'demo-to-codepen': path.resolve(projectRoot, 'src/demo-to-codepen.js'),
         'theme-chooser': path.resolve(projectRoot, 'src/theme-chooser.js'),
       },

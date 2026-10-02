@@ -1,0 +1,41 @@
+@use 'sass:math';
+
+@use '../variables' as *;
+@use './variables' as *;
+
+.hp-divider {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hp-divider > div {
+  flex-grow: 0;
+  flex-shrink: 0;
+  border-style: solid;
+  border-width: math.div($hp-divider-height, 2) calc(clamp(500px, 50vw, 800px));
+  margin: 0 -1px; // prevent gaps in FF
+  transform: rotate(0.0001deg); // prevents jagged edges in FF/Safari
+}
+
+.hp-divider:before,
+.hp-divider:after {
+  content: '';
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+@mixin hp-divider-colors($color0, $color1) {
+  & > div {
+    border-color: $color1 $color1 $color0 $color0;
+  }
+
+  &:before {
+    background-color: $color0;
+  }
+
+  &:after {
+    background-color: $color1;
+  }
+}

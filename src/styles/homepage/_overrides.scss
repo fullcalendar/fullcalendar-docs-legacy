@@ -1,0 +1,6 @@
+@use 'variables' as *;
+
+.footer {
+  background: $hp-footer-color !important;
+  padding-bottom: 1.5em; // compensate for top divider
+}

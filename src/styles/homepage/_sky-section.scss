@@ -1,0 +1,234 @@
+@use '../variables' as *;
+@use './variables' as *;
+@use './mixins' as hp-mixins;
+
+.hp-sky-section {
+  .hp-section__bg {
+    z-index: $hp-sky-bg-z;
+  }
+
+  .hp-section__fg {
+    z-index: $hp-sky-fg-z;
+    margin-top: -100px; // allow balloons to bleed up
+    padding-top: 100px; // "
+    overflow: hidden; // for left/right overflow of sprites
+  }
+}
+
+// background
+// ----------------------------------------------------------------------------------------------------
+
+.hp-sky-section__lightning {
+  @include hp-mixins.expand-absolute;
+}
+
+.hp-sky-section__image-bg {
+  top: -30px;
+  bottom: -30px;
+  background-image: url('../../assets/homepage/clouds-narrow.svg'); // FIX: has weird blank pixel strip on left side
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+}
+
+.hp-sky-section__lightning {
+  background-image: url('../../assets/homepage/lightning-narrow.png');
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+}
+
+// only shrink down background if window is narrower than container
+@media only screen and (max-width: $container-max-width - 1) {
+  .hp-sky-section__image-bg {
+    background-size: cover;
+  }
+
+  .hp-sky-section__lightning {
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+  // >=tablet
+  .hp-sky-section__image-bg {
+    top: -52px;
+    bottom: -52px;
+    margin-left: -60px; // shift image to left, but 50/50% keeps center point
+    background-image: url('../../assets/homepage/clouds.svg');
+    background-position: 50% 50%;
+  }
+
+  .hp-sky-section__lightning {
+    background-image: url('../../assets/homepage/lightning.png');
+    background-position: 50% 50%;
+  }
+
+  .hp-sky-section__color-bg {
+    display: flex;
+
+    &:before {
+      content: '';
+      flex-grow: 1;
+      background: #000;
+    }
+
+    &:after {
+      content: '';
+      flex-grow: 1;
+      background-image: linear-gradient(
+        to bottom,
+        #d3f1fc 12.5%,
+        #c8edfc 25%,
+        #bfebfc 37.5%,
+        #b1e6fa 50%,
+        #9adff8 75%,
+        #8cdaf8 100%
+      );
+    }
+  }
+}
+
+// split layout spacing
+// ----------------------------------------------------------------------------------------------------
+
+@media only screen and (max-width: $tablet-breakpoint - 1) {
+  // <tablet
+  .hp-powerful {
+    margin: 25% 0; // percentage of height
+  }
+
+  .hp-lightweight {
+    margin: 35% 0 20%; // percentage of height
+  }
+
+  .hp-lightweight__sprites {
+    left: 20%;
+  }
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+  // >=tablet
+  .hp-sky-section .hp-split {
+    min-height: calc(min(65vw, 665px));
+    align-items: center;
+  }
+
+  .hp-lightweight {
+    margin-top: 32px;
+  }
+
+  .hp-lightweight__content {
+    margin-left: 12.5%;
+  }
+
+  .hp-lightweight__sprites {
+    left: 120px;
+  }
+}
+
+// "powerful" section
+// ----------------------------------------------------------------------------------------------------
+
+.hp-powerful {
+  animation: hp-fade-in ease-in $hp-animation-duration-fast;
+
+  .hp-section-desc {
+    max-width: 364px;
+  }
+}
+
+// "lightweight" section
+// ----------------------------------------------------------------------------------------------------
+
+.hp-lightweight {
+  position: relative; // for sprite container
+
+  .hp-section-desc {
+    max-width: 264px;
+  }
+}
+
+.hp-lightweight__content {
+  position: relative;
+  z-index: 2;
+  animation: hp-fade-in ease-in $hp-animation-duration-fast;
+}
+
+.hp-lightweight__sprites {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  margin-top: 15%; // percentage of width
+  width: 80%;
+  min-width: 380px;
+  max-width: 480px;
+}
+
+.hp-lightweight__sprites-inner {
+  position: relative;
+  margin-top: -50%;
+  padding-top: 50%;
+  margin-bottom: -50%;
+  padding-bottom: 50%;
+
+  img {
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.hp-lightweight__balloon-big {
+  position: absolute;
+  top: 0%;
+  left: 39.5%;
+  width: 41%;
+  animation: hp-balloon-big-enter ease-out $hp-animation-duration-slow;
+}
+
+.hp-lightweight__balloon-small1 {
+  position: absolute;
+  top: 5%;
+  left: 7%;
+  width: 18%;
+  opacity: 0.6;
+  animation: hp-balloon-small-enter ease-out $hp-animation-duration-slow;
+}
+
+.hp-lightweight__balloon-small2 {
+  position: absolute;
+  top: 45%;
+  left: 80%;
+  width: 20%;
+  opacity: 0.5;
+  animation: hp-balloon-small-enter ease-out $hp-animation-duration-slow;
+}
+
+.hp-lightweight__balloon-small3 {
+  position: absolute;
+  top: 77%;
+  left: 43%;
+  width: 18%;
+  opacity: 0.7;
+  animation: hp-balloon-small-enter ease-out $hp-animation-duration-slow;
+}
+
+// animations
+// ----------------------------------------------------------------------------------------------------
+
+@keyframes hp-balloon-big-enter {
+  0% {
+    transform: translate(-20px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes hp-balloon-small-enter {
+  0% {
+    transform: translate(-10px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

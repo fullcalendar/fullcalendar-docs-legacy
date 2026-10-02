@@ -1,4 +1,6 @@
-{% if page.is_changelogs %}
+{% if page.is_homepage %}
+  {% assign selected_topbar_item = '' %}
+{% elsif page.is_changelogs %}
   {% assign selected_topbar_item = 'changelogs' %}
 {% elsif page.is_reduced_test_cases %}
   {% assign selected_topbar_item = 'reduced_test_cases' %}
@@ -22,7 +24,7 @@
       %}topbar__nav-item--selected{%
         endif
       %}'>
-        <a class='topbar__nav-handle' href='{{ site.baseurl }}/'>
+        <a class='topbar__nav-handle' href='{{ site.baseurl }}/docs'>
           Docs
         </a>
       </div>

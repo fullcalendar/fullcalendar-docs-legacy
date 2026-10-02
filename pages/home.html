@@ -1,0 +1,369 @@
+---
+full_title: FullCalendar - JavaScript Event Calendar
+layout: homepage
+permalink: /
+is_homepage: true
+techs:
+  - name: react
+    title: React
+    logo_width: 42
+    logo_height: 36
+    highlight_color: '#82d7f7'
+    desc: FullCalendar provides a highly performant React component that accepts JSX for rendering nested content
+    href: /v6/react
+  - name: vue
+    title: Vue
+    logo_width: 38
+    logo_height: 33
+    highlight_color: '#6de6a0'
+    desc: FullCalendar provides a highly performant Vue component that accepts slot templates for nested content
+    href: /v6/vue
+  - name: angular
+    title: Angular
+    logo_width: 36
+    logo_height: 38
+    highlight_color: '#ff717e'
+    desc: FullCalendar provides a highly performant Angular component that accepts templates for nested content
+    href: /v6/angular
+  - name: js
+    title: JavaScript
+    logo_width: 34
+    logo_height: 34
+    highlight_color: '#fff39b'
+    desc: FullCalendar's vanilla JavaScript API is blazing fast, using a very small embedded virtual DOM library called Preact
+    href: /v6/getting-started
+---
+
+{% comment %}
+  A time capsule of the fullcalendar.io homepage from the v6 era.
+  Ported from the SvelteKit site. Links point to the v6 docs on this site.
+{% endcomment %}
+
+{% assign img_base = site.baseurl | append: '/assets/homepage' %}
+
+<section class='hp-intro-section hp-section'>
+  <div class='container'>
+    <div class='hp-split'>
+      <div class='hp-intro-verbage'>
+        <h1>
+          The Most Popular
+          <strong>
+            JavaScript
+            <br />
+            Calendar
+          </strong>
+        </h1>
+        <div class='hp-intro-verbage__buttons'>
+          <a class='hp-button hp-button--blue' href='{{ site.baseurl }}/v6/getting-started'>Get started</a>
+          <a class='hp-intro-verbage__demo-button hp-button hp-button--yellow' href='{{ site.prod_url }}/demos'>
+            View demos
+          </a>
+        </div>
+      </div>
+      <div class='hp-intro-demo'>
+        <div class='hp-intro-demo__calendar'></div>
+        <div class='hp-intro-demo__buttons'>
+          <a class='hp-intro-demo__demo-button hp-button hp-button--yellow' href='{{ site.prod_url }}/demos'>
+            View demos
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class='hp-space-section hp-section hp-dark-bg'>
+  <div class='hp-divider hp-skew'>
+    <div></div>
+  </div>
+  <div class='hp-section__inner'>
+    <div class='hp-space-section__color-bg hp-section__bg hp-skew'>
+      <div class='hp-space-bg-container container'>
+        <div class='hp-space-editor-bg'></div>
+      </div>
+    </div>
+    <div class='hp-space-section__image-bg hp-section__bg'>
+      <div class='hp-space-bg-container container'>
+        <div class='hp-space-editor' data-nosnippet>
+          <div class='hp-space-editor__line-numbers'>
+            {% for line_number in (1..18) %}
+              <span>{{ line_number }}<br /></span>
+            {% endfor %}
+          </div>
+          <div class='hp-space-editor__code-area'>
+            {% for tech in page.techs %}
+              <div class='hp-space-editor__code {% if forloop.first %}hp-space-editor__code--selected{% endif %}' data-tech-code='{{ tech.name }}'>
+                {% capture code %}{% include homepage-code/{{ tech.name }}.txt %}{% endcapture %}
+                <pre><code>{{ code | rstrip | escape }}</code></pre>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='hp-section__fg'>
+      <div class='container container--always-spacious'>
+
+        <!-- Split TechSelector (>=tablet) -->
+        <div class='hp-split'>
+          <div class='hp-space-verbage' role='tabpanel'>
+            {% for tech in page.techs %}
+              <div class='hp-space-verbage__item' data-tech-verbage='{{ tech.name }}' {% unless forloop.first %}hidden{% endunless %}>
+                <h2 class='hp-section-title'>
+                  Built for <span style='color: {{ tech.highlight_color }}'>{{ tech.title }}</span>
+                </h2>
+                <p class='hp-section-desc'>
+                  {{ tech.desc }}
+                </p>
+                <a class='hp-button hp-button--yellow' href='{{ site.baseurl }}{{ tech.href }}'>
+                  Learn more
+                </a>
+              </div>
+            {% endfor %}
+          </div>
+          <div class='hp-space-selector'>
+            {% for tech in page.techs %}
+              <div class='hp-space-selector__item' role='tab' tabindex='0' data-tech-tab='{{ tech.name }}' aria-selected='{% if forloop.first %}true{% else %}false{% endif %}'>
+                <span class='hp-tech-icon {% if forloop.first %}hp-tech-icon--selected{% endif %}'>
+                  <img src='{{ img_base }}/tech/{{ tech.name }}.png' alt='{{ tech.title }} logo' width='{{ tech.logo_width }}' height='{{ tech.logo_height }}' />
+                </span>
+                <span class='hp-tech-title {% if forloop.first %}hp-tech-title--selected{% endif %}'>
+                  {{ tech.title }}
+                </span>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <!-- Accordion TechSelector (<tablet) -->
+        <div class='hp-tech-accordion'>
+          {% for tech in page.techs %}
+            <div class='hp-tech-accordion__item' data-tech-accordion='{{ tech.name }}'>
+              <div class='hp-tech-accordion__item-head' role='button' tabindex='0' aria-pressed='{% if forloop.first %}true{% else %}false{% endif %}'>
+                <span class='hp-tech-accordion__item-toggle {% if forloop.first %}hp-tech-accordion__item-toggle--selected{% endif %}'></span>
+                <span class='hp-tech-icon hp-tech-icon--small {% if forloop.first %}hp-tech-icon--selected{% endif %}'>
+                  <img src='{{ img_base }}/tech/{{ tech.name }}.png' alt='{{ tech.title }} logo' width='{{ tech.logo_width }}' height='{{ tech.logo_height }}' />
+                </span>
+                <span class='hp-tech-accordion__item-rich-title hp-section-title' style='margin: 0' {% unless forloop.first %}hidden{% endunless %}>
+                  Built for <span style='color: {{ tech.highlight_color }}'>{{ tech.title }}</span>
+                </span>
+                <span class='hp-tech-accordion__item-plain-title hp-tech-title' {% if forloop.first %}hidden{% endif %}>
+                  {{ tech.title }}
+                </span>
+              </div>
+              <div class='hp-tech-accordion__item-body' role='region' {% unless forloop.first %}hidden{% endunless %}>
+                <p class='hp-section-desc'>
+                  {{ tech.desc }}
+                </p>
+                <a class='hp-button hp-button--yellow' href='{{ site.baseurl }}{{ tech.href }}'>
+                  Learn more
+                </a>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class='hp-divider hp-skew'>
+    <div></div>
+  </div>
+</section>
+
+<section class='hp-sky-section hp-section'>
+  <div class='hp-section__inner'>
+    <div class='hp-sky-section__color-bg hp-section__bg hp-skew'></div>
+    <div class='hp-sky-section__image-bg hp-section__bg'>
+      <div class='hp-sky-section__lightning'></div>
+    </div>
+    <div class='hp-section__fg'>
+      <div class='container container--always-spacious'>
+        <div class='hp-split'>
+          <div class='hp-powerful hp-dark-bg hp-animation hp-animation-trigger'>
+            <h3 class='hp-section-title'>Powerful</h3>
+            <p class='hp-section-desc'>
+              With over 300 settings, and more being added every release, FullCalendar can do just
+              about anything.
+            </p>
+            <a class='hp-button hp-button--yellow hp-button--mild-shadow' href='{{ site.baseurl }}/v6'>
+              Learn more
+            </a>
+          </div>
+          <div class='hp-lightweight hp-neutral-bg hp-animation-trigger'>
+            <div class='hp-lightweight__content hp-animation'>
+              <h3 class='hp-section-title'>Lightweight</h3>
+              <p class='hp-section-desc'>
+                Reduce your project's bundle size by using FullCalendar's modular plugins.
+              </p>
+              <a class='hp-button hp-button--blue' href='{{ site.baseurl }}/v6/plugin-index'>Learn more</a>
+            </div>
+            <div class='hp-lightweight__sprites'>
+              <div class='hp-lightweight__sprites-inner'>
+                <div class='hp-lightweight__balloon-big hp-animation'>
+                  <img src='{{ img_base }}/balloon-big.svg' alt='' width='196' height='266' />
+                </div>
+                <div class='hp-lightweight__balloon-small1 hp-animation'>
+                  <img src='{{ img_base }}/balloon-small1.svg' alt='' width='82' height='112' />
+                </div>
+                <div class='hp-lightweight__balloon-small2 hp-animation'>
+                  <img src='{{ img_base }}/balloon-small2.svg' alt='' width='95' height='127' />
+                </div>
+                <div class='hp-lightweight__balloon-small3 hp-animation'>
+                  <img src='{{ img_base }}/balloon-small3.svg' alt='' width='83' height='112' />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class='hp-mountain-section hp-section'>
+  <div class='hp-divider hp-skew'>
+    <div></div>
+  </div>
+  <div class='hp-section__inner'>
+    <div class='hp-mountain-section__color-bg hp-section__bg hp-skew'></div>
+    <div class='hp-mountain-image-bg hp-section__bg'>
+      <div class='hp-mountain-image-bg__left'></div>
+      <div class='hp-mountain-image-bg__center'>
+        <div>
+          <img src='{{ img_base }}/mountain.svg' width='2205' height='748' alt='' />
+        </div>
+      </div>
+      <div class='hp-mountain-image-bg__right'></div>
+    </div>
+    <div class='hp-section__fg'>
+      <div class='container'>
+        <div class='hp-split'>
+          <div class='hp-mountain-logos hp-animation hp-animation-trigger'>
+            <h3 class='hp-mountain-logos__title'>Some of our customers</h3>
+            <div class='hp-mountain-logos__content'>
+              <div>
+                <img src='{{ img_base }}/logos/amazon.png' alt='Amazon' width='124' height='38' style='margin-top: 11%' />
+              </div>
+              <div>
+                <img src='{{ img_base }}/logos/uber.png' alt='Uber' width='109' height='38' />
+              </div>
+              <div>
+                <img src='{{ img_base }}/logos/netflix.png' alt='Netflix' width='124' height='34' style='margin-top: 4%' />
+              </div>
+              <div>
+                <img src='{{ img_base }}/logos/intuit.png' alt='Intuit' width='124' height='36' />
+              </div>
+              <div>
+                <img src='{{ img_base }}/logos/samsung.png' alt='Samsung' width='124' height='41' style='margin-top: 9%' />
+              </div>
+              <div>
+                <img src='{{ img_base }}/logos/yahoo.png' alt='Yahoo' width='124' height='35' style='margin-top: 11%' />
+              </div>
+              <div>
+                <img src='{{ img_base }}/logos/paypal.png' alt='PayPal' width='124' height='35' style='margin-top: 13%' />
+              </div>
+              <div>
+                <img src='{{ img_base }}/logos/akamai.png' alt='Akamai' width='124' height='51' />
+              </div>
+              <div style='width: 37%'>
+                <img src='{{ img_base }}/logos/astrazeneca.png' alt='AstraZeneca' width='211' height='51' />
+              </div>
+              <div>
+                <img src='{{ img_base }}/logos/pfizer.png' alt='Pfizer' width='120' height='76' />
+              </div>
+              <div>
+                <img src='{{ img_base }}/logos/cisco.png' alt='Cisco' width='124' height='65' />
+              </div>
+              <div>
+                <img src='{{ img_base }}/logos/deloitte.png' alt='Deloitte' width='124' height='24' style='margin-top: 7%' />
+              </div>
+              <div>
+                <img src='{{ img_base }}/logos/accenture.png' alt='Accenture' width='124' height='34' />
+              </div>
+              <div>
+                <img src='{{ img_base }}/logos/nasa.png' alt='Nasa' width='108' height='85' style='margin-top: -15%' />
+              </div>
+            </div>
+          </div>
+          <div class='hp-mountain-stats hp-animation hp-animation-trigger'>
+            <div class='hp-mountain-stats__item'>
+              <h4>
+                Over <strong>9M</strong>
+              </h4>
+              <strong>NPM</strong> downloads per month
+            </div>
+            <div class='hp-mountain-stats__item'>
+              <h4>
+                Over <strong>130M</strong>
+              </h4>
+              <strong>CDN</strong> downloads per month
+            </div>
+            <div class='hp-mountain-stats__item'>
+              <h4>
+                Over <strong>20K</strong>
+              </h4>
+              <strong>GitHub</strong> stargazers
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class='hp-ocean-section hp-section'>
+  <div class='hp-divider'>
+    <div></div>
+  </div>
+  <div class='hp-section__inner'>
+    <div class='hp-section__bg hp-ocean-bg'>
+      <div></div>
+    </div>
+    <div class='hp-section__fg'>
+      <div class='container container--always-spacious'>
+        <div class='hp-split'>
+          <div class='hp-open-source hp-dark-bg hp-animation-trigger'>
+            <div class='hp-open-source__content hp-animation'>
+              <h3 class='hp-section-title'>Open Source...</h3>
+              <p class='hp-section-desc'>
+                With over 10 years of open source and over 120 contributors, FullCalendar will
+                always have a free and open source core.
+              </p>
+              <a class='hp-button hp-button--blue hp-button--mild-shadow' href='{{ site.prod_url }}/license'>
+                Learn more
+              </a>
+            </div>
+            <div class='hp-open-source__sprites'>
+              <div class='hp-open-source__sprites-inner'>
+                <div class='hp-open-source__octocat hp-animation'>
+                  <img src='{{ img_base }}/octocat.png' width='307' height='350' alt='Octocat' />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='hp-premium hp-dark-bg hp-animation-trigger'>
+            <div class='hp-premium__content hp-animation'>
+              <h3 class='hp-section-title'>Supercharged.</h3>
+              <p class='hp-section-desc'>Level-up by purchasing premium plugins and support.</p>
+              <a class='hp-button hp-button--yellow' href='{{ site.prod_url }}/pricing'>Learn more</a>
+            </div>
+            <div class='hp-premium__sprites'>
+              <div class='hp-premium__sprites-inner'>
+                <div class='hp-premium__narwhal-small hp-animation'>
+                  <img src='{{ img_base }}/narwhal-small.png' width='465' height='416' alt='Small narwhal' />
+                </div>
+                <div class='hp-premium__narwhal-big hp-animation'>
+                  <img src='{{ img_base }}/narwhal-big.png' width='762' height='782' alt='Big narwhal' />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='hp-divider'>
+    <div></div>
+  </div>
+</section>
