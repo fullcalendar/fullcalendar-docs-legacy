@@ -14,7 +14,7 @@ related:
   - firstHour
 ---
 
-Agenda view displays one-or-more horizontal days as well as an axis of time, usually midnight to midnight, on the vertical axis. The two predefined agenda views are **agendaDay** and **agendaWeek**. They can be initialized like this:
+Agenda view displays one or more days side by side, against a vertical axis of time. The time axis usually runs from midnight to midnight. The two predefined agenda views are **agendaDay** and **agendaWeek**. They can be initialized like this:
 
 ```js
 $('#calendar').fullCalendar({
