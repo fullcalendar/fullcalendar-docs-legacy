@@ -3,7 +3,7 @@ title: addResource
 type: method
 ---
 
-Allows programmatic rendering of a new resource on the calendar after the initial set of resources has already been displayed.
+Adds a new resource to the calendar after the initial resources have been displayed.
 
 <div class='spec' markdown='1'>
 .fullCalendar( 'addResource', resource, scroll )

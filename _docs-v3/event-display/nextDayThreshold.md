@@ -2,13 +2,13 @@
 title: nextDayThreshold
 ---
 
-When an event's end time spans into another day, the minimum time it must be in order for it to render as if it were on that day.
+How far an event must run into the next day before it renders on that day. It applies when an event's end time spans into another day.
 
 <div class='spec' markdown='1'>
 Duration, default: `"09:00:00"` (9am)
 </div>
 
-Only affects timed events that appear on whole-days. Whole-day cells occur in month view, basicDay, basicWeek and the all-day slots in the agenda views.
+Only affects timed events that appear on whole-days: in month view, basicDay, basicWeek, list views, and Scheduler timeline views with day-sized slots. It does not affect all-day events, or timed events displayed against a time-of-day axis, such as in the agenda views.
 
 For example, with `nextDayThreshold` being the default of 9am, the following event would appear to take up only one day:
 

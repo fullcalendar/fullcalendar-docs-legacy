@@ -36,7 +36,7 @@ A specific period of time with concrete start/end dates can also be given, simil
 
 For more granular control over constraining event dates/times, use the `constraint` property on an [Event Source](event-source-object) or the `constraint` property on an [Event Object](event-object). [View a demo](event-constraint-demo) that does this.
 
-If you are using a resource view and would like to constrain an event to cerain resources, [read this article](eventConstraint).
+If you are using a resource view and would like to constrain an event to certain resources, [read this article](eventConstraint).
 
 
 ## Resources
@@ -48,12 +48,12 @@ $('#calendar').fullCalendar({
   defaultView: 'timelineWeek',
   resources: [
     // resource data...
-  ]
+  ],
   events: [
     {
       title: 'my event',
       start: '2016-01-01',
-      resourceId: 'b' // start out in resource 'b'
+      resourceId: 'b', // start out in resource 'b'
       constraint: {
         resourceIds: [ 'a', 'b', 'c' ] // constrain dragging to these
       }

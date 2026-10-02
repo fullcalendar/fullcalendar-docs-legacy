@@ -2,7 +2,7 @@
 title: eventLimitClick
 ---
 
-Determines the action taken when the user clicks on a "more" link created by the [eventLimit](eventLimit) option.
+Determines what happens when the user clicks a "more" link. These links are created by the [eventLimit](eventLimit) option.
 
 <div class='spec' markdown='1'>
 "popover", "week", "day", view name (string), function

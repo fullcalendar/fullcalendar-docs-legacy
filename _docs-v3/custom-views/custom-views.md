@@ -16,4 +16,4 @@ demos:
   - timeline-custom-view-demo
 ---
 
-It's possible to take a pre-defined view that FullCalendar provides and create your own view that spans a different periods of time. You can even code your own view from scratch with JS.
+It's possible to take a pre-defined view that FullCalendar provides and create your own view that spans a different period of time. You can even code your own view from scratch with JS.
