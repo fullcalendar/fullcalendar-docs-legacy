@@ -20,7 +20,7 @@ The optional `settings` argument contains properties that affect serialization:
 </tr>
 
 <tr>
-<th>collapseColor</th>
+<th>collapseEventColor</th>
 <td>If set to <code>true</code>, and the <code>eventBackgroundColor</code> and <code>eventBorderColor</code> properties are identical, they will be merged and outputted as a single <code>eventColor</code> property. If <code>false</code> (the default), they will be outputted as separate properties.</td>
 </tr>
 

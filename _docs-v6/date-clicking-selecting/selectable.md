@@ -17,7 +17,7 @@ To learn the ways in which selections can be cleared, read the docs for the [uns
 
 ## Loading the Interaction Plugin
 
-You must load the interaction plugin in order for `selectable` to work. You can do this with [and ES6 build system](initialize-es6):
+You must load the interaction plugin in order for `selectable` to work. You can do this with [an ES6 build system](initialize-es6):
 
 ```js
 import { Calendar } from '@fullcalendar/core';
@@ -35,7 +35,7 @@ let calendar = new Calendar(calendarEl, {
 Alternatively, you can use [a global bundle](initialize-globals):
 
 ```html
-<script src='fullcalendar/dist/index.global.js'></script>
+<script src='fullcalendar/index.global.js'></script>
 <script>
 ...
 var calendar = new FullCalendar.Calendar(calendarEl, {

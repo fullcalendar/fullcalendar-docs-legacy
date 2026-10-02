@@ -30,7 +30,7 @@ demos:
   - timegrid-custom-view-demo
 ---
 
-A TimeGrid view displays one-or-more horizontal days as well as an axis of time, usually midnight to midnight, on the vertical axis.<!--more--> Either install via [script tags](initialize-globals) or [individual packages](initialize-es6) like so:
+A TimeGrid view displays one or more days side by side, against a vertical axis of time. The time axis usually runs from midnight to midnight.<!--more--> Either install via [script tags](initialize-globals) or [individual packages](initialize-es6) like so:
 
 ```
 npm install --save \

@@ -17,9 +17,9 @@ This will only return options that are global to the calendar. This method will 
 
 ## Setting
 
-It is possible to dynamically set options after initalization. These option modifications will be applied to all views. It is not currently possible to set [View-Specific Options](view-specific-options) in this manner.
+It is possible to dynamically set options after initialization. These option modifications will be applied to all views. It is not currently possible to set [View-Specific Options](view-specific-options) in this manner.
 
-Can you dynamically set a single option:
+You can dynamically set a single option:
 
 ```js
 calendar.setOption('locale', 'fr');
@@ -50,5 +50,4 @@ Some options affect processing of event data. Dynamically setting them will *not
 
 Dynamic setting of some options is simply **not yet implemented**:
 
-- handleWindowResize
 - views

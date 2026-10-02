@@ -41,7 +41,7 @@ var calendar = new Calendar(calendarEl, {
   validRange: function(nowDate) {
     return {
       start: nowDate,
-      end: nowDate.clone().add(1, 'months')
+      end: addMonths(nowDate, 1) // fictional util
     };
   }
 });

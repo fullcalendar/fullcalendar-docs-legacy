@@ -2,7 +2,7 @@
 title: allDayMaintainDuration
 ---
 
-Determines how an event's duration should be mutated when it is dragged from a timed section to an all-day section and vice versa.
+Determines how an event's duration changes when it's dragged between timed and all-day sections.
 
 <div class='spec' markdown='1'>
 `true` or `false` (the default)

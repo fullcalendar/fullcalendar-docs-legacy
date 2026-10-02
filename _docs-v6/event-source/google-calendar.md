@@ -48,14 +48,18 @@ let calendar = new Calendar(calendarEl, {
 });
 ```
 
-Alternatively, you can use [a global bundle](initialize-globals):
+Alternatively, you can use [script tags](initialize-globals). The plugin is not part of the standard `fullcalendar` bundle, so add the plugin's own global file after the bundle:
 
 ```html
-<script src='fullcalendar/dist/index.global.js'></script>
+<script src='fullcalendar/index.global.js'></script>
+
+<!-- must go AFTER the fullcalendar bundle -->
+<script src='@fullcalendar/google-calendar/index.global.js'></script>
+
 <script>
 ...
 var calendar = new FullCalendar.Calendar(calendarEl, {
-  // no plugin config required!
+  // no plugins array required! the plugin's global file registers itself
 });
 ...
 </script>

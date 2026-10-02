@@ -3,7 +3,7 @@ title: monthStartFormat
 since_version: 6.1.0
 ---
 
-When a [dayGrid view](daygrid-view) is programmed to span across months, the text format for the first cell of each month.
+The date format for the first cell of each month, when a [dayGrid view](daygrid-view) spans several months.
 
 <div class='spec' markdown='1'>
 [format string](date-formatting), *default*: `{ month: 'long', day: 'numeric' }`

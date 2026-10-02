@@ -18,7 +18,11 @@ You can use the Bootstrap plugin with [browser globals and script tags](initiali
 Then, load a FullCalendar bundle and initialize the calendar:
 
 ```html
-<script src='fullcalendar/dist/index.global.js'></script>
+<script src='fullcalendar/index.global.js'></script>
+
+<!-- must go AFTER the fullcalendar bundle -->
+<script src='@fullcalendar/bootstrap5/index.global.js'></script>
+
 <script>
 ...
 var calendar = new FullCalendar.Calendar(calendarEl, {

@@ -37,7 +37,7 @@ calendar.render()
 
 ## Usage with Script Tags
 
-You can also configure the rrule plugin with [script tags](initialize-globals). This example leverages CDN links:
+You can also configure the rrule plugin with [script tags](initialize-globals). The plugin is not part of the standard `fullcalendar` bundle, so add the rrule library and the plugin's own global file. This example leverages CDN links:
 
 ```html
 <!-- rrule lib -->
@@ -46,7 +46,7 @@ You can also configure the rrule plugin with [script tags](initialize-globals). 
 <!-- fullcalendar bundle -->
 <script src='https://cdn.jsdelivr.net/npm/fullcalendar@{{ site.data.latest-releases.v6 }}/index.global.min.js'></script>
 
-<!-- the rrule-to-fullcalendar connector. must go AFTER the rrule lib -->
+<!-- the rrule-to-fullcalendar connector. must go AFTER the rrule lib and the fullcalendar bundle -->
 <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/rrule@{{ site.data.latest-releases.v6 }}/index.global.min.js'></script>
 
 <script>
