@@ -2,7 +2,7 @@
 title: Third-Party Dragging Libraries
 ---
 
-It's possible to leverage a third-party library to do your [external element drag-n-drop](external-dragging) instead of using FullCalendar. You might want to do this if you prefer the visual effects of another library, need "sorting" functionality, or need the ability to drag-n-drop between multiple containers, functionality that FullCalendar does not have.
+It's possible to leverage a third-party library to do your [external element drag-n-drop](external-dragging), instead of FullCalendar's own. You might want to do this if you prefer the visual effects of another library, need "sorting" functionality, or need the ability to drag-n-drop between multiple containers, functionality that FullCalendar does not have.
 
 FullCalendar offers a way to do this via the `ThirdPartyDraggable` class. This class will work with **any** third-party drag-n-drop library, without needing any sort of specific adapter. The following example demonstrates [Dragula](https://bevacqua.github.io/dragula/):
 
@@ -13,7 +13,7 @@ import dragula from 'dragula';
 
 document.addEventListener('DOMContentLoaded', function() {
   let containerEl = document.getElementById('external-events-list');
-  let calendarEl = document.getElementBy('mycalendar');
+  let calendarEl = document.getElementById('mycalendar');
 
   let calendar = new Calendar(calendarEl, {
     plugins: [ interactionPlugin ],

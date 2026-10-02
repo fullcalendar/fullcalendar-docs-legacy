@@ -19,7 +19,7 @@ var calendar = new Calendar(calendarEl, {
 });
 ```
 
-More precisely, this is the aspect ratio of the calendar's "content" area (the area with a CSS class of "fc-view-container").
+More precisely, this is the aspect ratio of the calendar's "content" area.
 
 
 ## Setter

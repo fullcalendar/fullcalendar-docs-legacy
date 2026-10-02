@@ -2,7 +2,7 @@
 title: slotLabelInterval
 ---
 
-The frequency that the time slots should be labelled with text.
+The frequency that the time slots should be labeled with text.
 
 <div class='spec' markdown='1'>
 [Duration](duration-object)

@@ -8,7 +8,7 @@ Initially render the calendar, or rerender it after initialization.
 calendar.render()
 </div>
 
-You can initialize a calendar with an [ES6 Build System](initialize-es6) or [Script Tags](initialize-globals):
+Whether you initialize a calendar with an [ES6 Build System](initialize-es6) or [Script Tags](initialize-globals), nothing is displayed until `render` is called:
 
 ```js
 document.addEventListener('DOMContentLoaded', function() {

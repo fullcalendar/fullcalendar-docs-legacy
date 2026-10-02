@@ -2,7 +2,7 @@
 title: Resource Object
 ---
 
-Raw resource object are eventually [parsed](resource-parsing) into proper resource objects, which are accessible via Calendar methods such as [getResources](getResources) and [getResourceById](getResourceById). You can read their properties or manipulate them via methods.
+Raw resource objects are eventually [parsed](resource-parsing) into proper resource objects, which are accessible via Calendar methods such as [getResources](getResources) and [getResourceById](getResourceById). You can read their properties or manipulate them via methods.
 
 Each resource has the following properties:
 

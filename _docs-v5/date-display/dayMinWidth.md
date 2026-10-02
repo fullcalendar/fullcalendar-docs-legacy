@@ -3,7 +3,7 @@ title: dayMinWidth
 is_premium: true
 ---
 
-If specified, when the calendar gets narrow enough where day cells can no longer meet their `dayMinWidth`, horizontal scrollbars will appear.
+A minimum width for day cells, past which the calendar scrolls horizontally. When the calendar gets narrow enough that day cells can no longer meet their `dayMinWidth`, horizontal scrollbars appear.
 
 <div class='spec' markdown='1'>
 number of pixels, undefined

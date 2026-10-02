@@ -5,7 +5,7 @@ title: View Render Hooks
 
 ## Hooks
 
-`viewClassNames` - a [ClassName Input](classname-input) for adding classNames to the root view element. called whenever the view changes.
+`viewClassNames` - a [ClassName Input](classname-input) for adding classNames to the root view element. Called whenever the view changes.
 
 `viewDidMount` - called right after the view has been added to the DOM
 

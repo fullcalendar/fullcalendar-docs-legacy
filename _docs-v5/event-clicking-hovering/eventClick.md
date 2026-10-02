@@ -65,7 +65,7 @@ var calendar = new Calendar(calendarEl, {
 [View a simple demo](eventClick-demo) of eventClick.
 
 
-## Cancelling Default Behavior
+## Canceling Default Behavior
 
 Normally, if the [Event Object](event-object) has its `url` property set, a click on the event will cause the browser to visit the event's url (in the same window/tab). You can prevent this by calling `.preventDefault()` on the given native JS event.
 

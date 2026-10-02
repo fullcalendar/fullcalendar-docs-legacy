@@ -50,4 +50,4 @@ related:
   - showNonCurrentDates
 ---
 
-Settings that control presence/absense of dates as well as their styling and text. These settings work across a variety of different views.
+Settings that control presence/absence of dates as well as their styling and text. These settings work across a variety of different views.

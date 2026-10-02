@@ -39,7 +39,7 @@ export default createPlugin({
 });
 ```
 
-The `classNames` property is a [ClassName Input](classname-input) and the `content` property is a [Content Injection Input](content-injection).
+The `classNames` property is a [ClassName Input](classname-input), and the `content` property is a [Content Injection Input](content-injection).
 
 Then, in another file:
 

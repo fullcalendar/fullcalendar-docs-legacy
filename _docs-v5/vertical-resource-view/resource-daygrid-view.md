@@ -23,7 +23,7 @@ let calendar = new Calendar(calendarEl, {
 ...
 ```
 
-Or, you can choose to initialize Timeline view with the `fullcalendar-scheduler` [global bundle](initialize-globals):
+Or, you can choose to initialize Resource DayGrid view with the `fullcalendar-scheduler` [global bundle](initialize-globals):
 
 ```html
 <link href='fullcalendar-scheduler/main.css' rel='stylesheet' />
