@@ -2,7 +2,7 @@
 title: nextDayThreshold
 ---
 
-When an event's end time spans into another day, the minimum time it must be in order for it to render as if it were on that day.
+How far an event must run into the next day before it renders on that day. It applies when an event's end time spans into another day.
 
 <div class='spec' markdown='1'>
 Duration, default: `"00:00:00"`
@@ -46,4 +46,4 @@ Whereas, the following event would appear to take up two days:
 
 It is important to stress that this `nextDayThreshold` option, set on the Calendar itself, is ignored when `allDay` is `true`. Generally, as discussed when defining an [Event object](event-parsing), `allDay`, `start` and `end` properties are sufficient for specifying an event that lasts an entire day.
 
-However, when `allDay` is `false`, this additional `nextDayThreshold` property allows an override of the default behaviour of exclusive end dates by setting the cut-off point (or minimum) for the event to be rendered on that date.
+However, when `allDay` is `false`, `nextDayThreshold` sets the cut-off point (or minimum) for the event to be rendered on the day its `end` falls on. The event's actual `end` remains exclusive; only which days it is displayed on changes.

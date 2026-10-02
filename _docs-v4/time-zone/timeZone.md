@@ -32,7 +32,7 @@ An example to summarize this behavior: (the placeholder XX:XX signifies the loca
 var calendar = new Calendar(calendarEl, {
   timeZone: 'local', // the default (unnecessary to specify)
   events: [
-    { start: '2018-09-01T12:30:00Z' }, // will be shifted to local
+    { start: '2018-09-01T12:30:00Z' }, // will be shifted from UTC to local
     { start: '2018-09-01T12:30:00+XX:XX' }, // already same offset as local, so won't shift
     { start: '2018-09-01T12:30:00' } // will be parsed as if it were '2018-09-01T12:30:00+XX:XX'
   ],

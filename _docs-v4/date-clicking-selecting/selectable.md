@@ -17,7 +17,7 @@ To learn the ways in which selections can be cleared, read the docs for the [uns
 
 ## Loading the Interaction Plugin
 
-You must load the interaction plugin in order for `selectable` to work. You can do this with [and ES6 build system](initialize-es6):
+You must load the interaction plugin in order for `selectable` to work. You can do this with [an ES6 build system](initialize-es6):
 
 ```js
 import { Calendar } from '@fullcalendar/core';

@@ -3,7 +3,7 @@ title: addResource
 type: method
 ---
 
-Allows programmatic rendering of a new resource on the calendar after the initial set of resources has already been displayed.
+Adds a new resource to the calendar after the initial resources have been displayed.
 
 <div class='spec' markdown='1'>
 .addResource( resource, [ scrollTo ] )
@@ -16,6 +16,8 @@ var calendar = new Calendar(calendarEl, {
   // options
 });
 
+calendar.render();
+
 calendar.addResource({
   id: 'e',
   title: 'Room E'
@@ -24,7 +26,7 @@ calendar.addResource({
 
 If you would like the new resource to be a child of an existing resource, make sure to set its `parentId`. This method will return the parsed [Resource](resource-object) with methods such as [getEvents](Resource-getEvents).
 
-You may also specify an existing parsed Resource if it has previouisly been removed.
+You may also specify an existing parsed Resource if it has previously been removed.
 
 The `scrollTo` argument will scroll the current view to the newly added resource. It is optional and `true` by default. To disable this behavior, specify `false`.
 

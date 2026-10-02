@@ -54,7 +54,7 @@ The <a href='eventTextColor'>eventTextColor</a> setting for associated events.
 <tr>
 <th>eventClassNames</th>
 <td>
-className(s) that will apply to associated events.
+CSS class name(s) that will apply to associated events.
 </td>
 </tr>
 

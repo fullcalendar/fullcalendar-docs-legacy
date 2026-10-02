@@ -29,14 +29,14 @@ A specific period of time with concrete start/end dates can also be given, simil
 
 ```js
 {
-  startTime: '2014-12-01T10:00:00',
-  endTime: '2014-12-05T22:00:00'
+  start: '2014-12-01T10:00:00',
+  end: '2014-12-05T22:00:00'
 }
 ```
 
 For more granular control over constraining event dates/times, use the `constraint` property on an [Event Source](event-source-object) or the `constraint` property on an [Event Object](event-object). [View a demo](event-constraint-demo) that does this.
 
-If you are using a resource view and would like to constrain an event to cerain resources, [read this article](eventConstraint).
+If you are using a resource view and would like to constrain an event to certain resources, [read this article](eventConstraint).
 
 
 ## Resources
@@ -45,15 +45,15 @@ The `resourceId` and `resourceIds` (an array) properties can be applied to force
 
 ```js
 var calendar = new Calendar(calendarEl, {
-  defaultView: 'timelineWeek',
+  defaultView: 'resourceTimelineWeek',
   resources: [
     // resource data...
-  ]
+  ],
   events: [
     {
       title: 'my event',
-      startTime: '2016-01-01',
-      resourceId: 'b' // start out in resource 'b'
+      start: '2016-01-01',
+      resourceId: 'b', // start out in resource 'b'
       constraint: {
         resourceIds: [ 'a', 'b', 'c' ] // constrain dragging to these
       }

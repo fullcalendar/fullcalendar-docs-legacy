@@ -81,7 +81,7 @@ String. A URL that will be visited when this event is clicked by the user. For m
 <tr>
 <th>classNames</th>
 <td markdown='1'>
-An array of strings like `[ 'myclass1', myclass2' ]`. Determines which HTML classNames will be attached to the rendered event.
+An array of strings like `[ 'myclass1', 'myclass2' ]`. Determines which HTML classNames will be attached to the rendered event.
 </td>
 </tr>
 
