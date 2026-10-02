@@ -30,8 +30,8 @@
     "vite:build": "vite build",
     "vite:clean": "rm -rf _site/dist",
     "cloudflare:build": "bundle install && pnpm build",
-    "cloudflare:deploy": "wrangler deploy",
-    "cloudflare:preview": "wrangler versions upload"
+    "cloudflare:preview": "wrangler dev",
+    "cloudflare:deploy": "wrangler deploy"
   },
   "devDependencies": {
     "globby": "^11.0.0",
