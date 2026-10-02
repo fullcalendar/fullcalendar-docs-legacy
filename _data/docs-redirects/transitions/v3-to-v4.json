@@ -87,6 +87,7 @@
     "dragOpacity",
     "jquery-ui-dnd",
     "jquery-ui-theme-demo",
-    "upgrading-from-v1"
+    "upgrading-from-v1",
+    "upgrading-from-v2"
   ]
 }
