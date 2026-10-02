@@ -51,7 +51,7 @@ demos:
   - timeline-resource-render-hook-demo
 ---
 
-[FullCalendar Premium](/pricing) provides a view called "timeline view" with a customizable horizontal time-axis and resources as rows.
+[FullCalendar Premium]({{ site.main_site_url }}/pricing) provides a view called "timeline view" with a customizable horizontal time-axis and resources as rows.
 
 The following pre-configured timeline views are available: **timelineDay**, **timelineWeek**, **timelineMonth**, and **timelineYear**. They can be initialized in an [ES6 setup](initialize-es6) like so:
 

@@ -10,7 +10,7 @@
       {% for node in group.children %}
         <a class='term-table__term' href='{{ site.baseurl }}{{ node.article.url | escape }}'>
           <div class='term-table__term-title'>
-            {{ node.article.title | escape }}
+            {{ node.article.title_for_nav | default: node.article.title | escape }}
           </div>
           <div class='term-table__term-description'>
             {% if node.article.description %}

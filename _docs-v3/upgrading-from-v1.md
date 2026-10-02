@@ -1,6 +1,8 @@
 ---
 title: Upgrading to v2
+title_for_nav: Upgrading from v1
 layout: text
+description: What changed between v1 and v2, and how to upgrade
 ---
 
 FullCalendar version 2.0 ([full documentation]({{ site.baseurl }}/v3#v2))

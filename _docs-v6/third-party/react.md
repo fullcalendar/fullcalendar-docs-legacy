@@ -8,7 +8,7 @@ FullCalendar seamlessly integrates with the [React] JavaScript framework. It pro
 This package is released under an MIT license, the same license the standard version of FullCalendar uses. Useful links:
 
 - [Browse the Github repo]({{ site.react_repo_url }}) (please star it!)
-- [Bug report instructions](/reporting-bugs)
+- [Bug report instructions]({{ site.main_site_url }}/reporting-bugs)
 - [Example project][example project] leveraging [Webpack], [Babel], and [css-loader] (the code in this guide loosely follows it)
 - [Runnable project](https://stackblitz.com/github/fullcalendar/fullcalendar-examples/tree/v6/react18) in a code playground
 
@@ -177,7 +177,7 @@ export default function Calendar() {
 
 ## FullCalendar Premium
 
-How do you use [FullCalendar Premium's](/pricing) plugins with React? They are no different than any other plugin. Just follow the same instructions as you did `dayGridPlugin` in the above example. If you plan to use resources, you'll need the `@fullcalendar/resource` package:
+How do you use [FullCalendar Premium's]({{ site.main_site_url }}/pricing) plugins with React? They are no different than any other plugin. Just follow the same instructions as you did `dayGridPlugin` in the above example. If you plan to use resources, you'll need the `@fullcalendar/resource` package:
 
 ```sh
 npm install --save \

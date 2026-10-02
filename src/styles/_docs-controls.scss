@@ -12,6 +12,24 @@
   a {
     @include link-normal;
   }
+
+  .version-warning {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    border: 1px solid #e0a458;
+    background: #fdf3e7;
+    border-radius: 4px; // match the rectangular control buttons below
+    padding: 4px 8px;
+    line-height: 1.2;
+    white-space: nowrap;
+    color: #b06b1f;
+
+    a {
+      color: #b06b1f;
+      text-decoration: underline;
+    }
+  }
 }
 
 .docs-controls__controls {

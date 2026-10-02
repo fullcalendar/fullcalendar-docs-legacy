@@ -2,6 +2,7 @@
 <html>
 <head>
 {% include demo-v5-head.html %}
+{% include head-canonical.html %}
 {% if content contains '<body' %}
   {{ content | replace_first: '<body', '</head><body' }}
 {% else %}

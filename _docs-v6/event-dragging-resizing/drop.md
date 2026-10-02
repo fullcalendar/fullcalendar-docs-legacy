@@ -51,7 +51,7 @@ The native JavaScript event with low-level information such as click coordinates
 <tr>
 <th>resource</th>
 <td markdown='1'>
-If the current view is a resource-view, the [Resource Object](resource-object) the element was dropped on. Must be using one of the [resource plugins](/pricing).
+If the current view is a resource-view, the [Resource Object](resource-object) the element was dropped on. Must be using one of the [resource plugins]({{ site.main_site_url }}/pricing).
 </td>
 </tr>
 

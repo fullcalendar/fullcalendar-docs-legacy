@@ -1,0 +1,6 @@
+{% if page.canonical_url %}
+  <link rel='canonical' href='{{ page.canonical_url | escape }}' />
+{% endif %}
+{% if page.markdown_url %}
+  <link rel='alternate' type='text/markdown' href='{{ page.markdown_url | escape }}' />
+{% endif %}

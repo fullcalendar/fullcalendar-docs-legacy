@@ -1,0 +1,10 @@
+{% if page.markdown_url %}
+  <a class='control-button'
+    href='{{ site.baseurl }}{{ page.url | escape }}.md'
+    target='_blank'
+    >
+    <span class='control-button__text'>
+      view .md
+    </span>
+  </a>
+{% endif %}

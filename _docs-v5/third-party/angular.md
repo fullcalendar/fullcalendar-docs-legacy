@@ -8,7 +8,7 @@ FullCalendar integrates with the [Angular] 9 - 14. It provides a component that 
 This component is built and maintained by [irustm](https://github.com/irustm) in partnership with the maintainers of FullCalendar. It is the official Angular connector, released under an MIT license, the same license the standard version of FullCalendar uses. Useful links:
 
 - [Browse the Github repo]({{ site.angular_repo_url }}) (please star it!)
-- [Bug report instructions](/reporting-bugs)
+- [Bug report instructions]({{ site.main_site_url }}/reporting-bugs)
 - [Angular 13 example project]
 - [Angular 14 example project](https://github.com/fullcalendar/fullcalendar-examples/tree/v5/angular14)
 
@@ -231,7 +231,7 @@ export class AppComponent {
 
 ## FullCalendar Premium
 
-How do you use [FullCalendar Premium's](/pricing) plugins with Angular? They are no different than any other plugin. Just follow the same instructions as you did `dayGridPlugin` in the above example, but with [resourceTimelinePlugin](timeline-view) or whatever premium plugin you want to use:
+How do you use [FullCalendar Premium's]({{ site.main_site_url }}/pricing) plugins with Angular? They are no different than any other plugin. Just follow the same instructions as you did `dayGridPlugin` in the above example, but with [resourceTimelinePlugin](timeline-view) or whatever premium plugin you want to use:
 
 ```js
 import { BrowserModule } from '@angular/platform-browser';

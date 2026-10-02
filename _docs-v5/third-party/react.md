@@ -5,12 +5,12 @@ title_for_landing: React
 
 FullCalendar seamlessly integrates with the [React] JavaScript framework. It provides a component that exactly matches the functionality of FullCalendar's standard API.
 
-This is more than a mere "connector". It tells the core FullCalendar package to begin rendering with **React** virtual DOM nodes as opposed to the [Preact](https://preactjs.com/) nodes it normally uses, transforming FullCalendar into a "real" React component. You can learn a bit more [from this blog post](/blog/2020/05/react-ts-v5-beta) (more info to come).
+This is more than a mere "connector". It tells the core FullCalendar package to begin rendering with **React** virtual DOM nodes as opposed to the [Preact](https://preactjs.com/) nodes it normally uses, transforming FullCalendar into a "real" React component. You can learn a bit more [from this blog post]({{ site.main_site_url }}/blog/2020/05/react-ts-v5-beta) (more info to come).
 
 This package is released under an MIT license, the same license the standard version of FullCalendar uses. Useful links:
 
 - [Browse the Github repo]({{ site.react_repo_url }}) (please star it!)
-- [Bug report instructions](/reporting-bugs)
+- [Bug report instructions]({{ site.main_site_url }}/reporting-bugs)
 - [Example project][example project] leveraging [Webpack], [Babel], and [css-loader] (the code in this guide loosely follows it)
 - [Runnable project](https://stackblitz.com/github/fullcalendar/fullcalendar-examples/tree/v5/react) in a code playground
 
@@ -210,7 +210,7 @@ export default class DemoApp extends React.Component {
 
 ## FullCalendar Premium
 
-How do you use [FullCalendar Premium's](/pricing) plugins with React? They are no different than any other plugin. Just follow the same instructions as you did `dayGridPlugin` in the above example. Also, make sure to include your [schedulerLicenseKey](schedulerLicenseKey):
+How do you use [FullCalendar Premium's]({{ site.main_site_url }}/pricing) plugins with React? They are no different than any other plugin. Just follow the same instructions as you did `dayGridPlugin` in the above example. Also, make sure to include your [schedulerLicenseKey](schedulerLicenseKey):
 
 ```jsx
 import React from 'react'

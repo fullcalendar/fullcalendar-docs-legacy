@@ -8,6 +8,7 @@ children:
   - handlers
   - methods
   - reduced-test-cases
+  - upgrading-from-v3
   - title: More Advanced
     children:
       - view-specific-options

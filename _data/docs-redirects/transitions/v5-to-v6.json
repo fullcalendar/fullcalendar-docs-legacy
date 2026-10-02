@@ -1,0 +1,8 @@
+{
+  "from": 5,
+  "to": 6,
+  "replaced": {
+    "luxon2": "luxon"
+  },
+  "retired": ["upgrading-from-v4"]
+}

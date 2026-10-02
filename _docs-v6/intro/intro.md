@@ -9,6 +9,7 @@ children:
   - handlers
   - methods
   - reduced-test-cases
+  - upgrading-from-v5
   - title: More Advanced
     children:
       - css-customization

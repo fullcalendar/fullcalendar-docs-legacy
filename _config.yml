@@ -26,9 +26,10 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+url: https://legacy.fullcalendar.io # this site. jekyll serve swaps in localhost
 baseurl: ''
 
-prod_url: https://fullcalendar.io
+main_site_url: https://fullcalendar.io # the current (v7) site
 v6_to_v7_url: https://fullcalendar.io/docs/upgrading-from-v6
 demo_feed_url: https://fullcalendar.io/api/demo-feeds
 docs_repo_url: https://github.com/fullcalendar/fullcalendar-docs-legacy

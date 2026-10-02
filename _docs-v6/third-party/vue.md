@@ -8,7 +8,7 @@ FullCalendar seamlessly integrates with the [Vue] JavaScript framework. It provi
 This package is released under an MIT license, the same license the standard version of FullCalendar uses. Useful links:
 
 - [Browse the Github repo]({{ site.vue_repo_url }}) (please star it!)
-- [Bug report instructions](/reporting-bugs)
+- [Bug report instructions]({{ site.main_site_url }}/reporting-bugs)
 - Example projects:
   - [Vue 2 example](https://github.com/fullcalendar/fullcalendar-examples/tree/v6/vue2) (uses [Webpack] and [css-loader]) - [runnable](https://stackblitz.com/github/fullcalendar/fullcalendar-examples/tree/v6/vue2)
   - [Vue 3 example](https://github.com/fullcalendar/fullcalendar-examples/tree/v6/vue3) (uses [Vite]) - [runnable](https://stackblitz.com/github/fullcalendar/fullcalendar-examples/tree/v6/vue3)
@@ -190,7 +190,7 @@ However, the properties within `calendarOptions` must have the same names.
 
 ## FullCalendar Premium
 
-How do you use [FullCalendar Premium's](/pricing) plugins with Vue? They are no different than any other plugin. Just follow the same instructions as you did `dayGridPlugin` in the above example. If you plan to use resources, you'll need the `@fullcalendar/resource` package:
+How do you use [FullCalendar Premium's]({{ site.main_site_url }}/pricing) plugins with Vue? They are no different than any other plugin. Just follow the same instructions as you did `dayGridPlugin` in the above example. If you plan to use resources, you'll need the `@fullcalendar/resource` package:
 
 ```sh
 npm install --save \

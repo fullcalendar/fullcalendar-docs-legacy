@@ -1,6 +1,8 @@
 ---
 title: V3 Release Notes and Upgrade Guide
+title_for_nav: Upgrading from v2
 layout: text
+description: What changed between v2 and v3, and how to upgrade
 ---
 
 Upgrading from FullCalendar version 2 to version 3 should be straightforward for most integrations. Version 3 introduced new features, but only a small number of breaking changes.

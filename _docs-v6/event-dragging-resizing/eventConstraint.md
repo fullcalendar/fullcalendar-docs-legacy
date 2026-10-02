@@ -62,4 +62,4 @@ var calendar = new Calendar(calendarEl, {
 });
 ```
 
-Resources are a [premium feature](/pricing).
+Resources are a [premium feature]({{ site.main_site_url }}/pricing).

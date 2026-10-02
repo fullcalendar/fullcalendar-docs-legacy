@@ -1,41 +1,10 @@
-
-{% if page.version.id == "v6" %}
-  <div id='docs-controls-warning'>
-    These docs are for an old release.
-    <a href='{{ site.v6_to_v7_url }}'>
+<div id='docs-controls-warning' class='version-warning'>
+  These docs are for an old release.
+  <a href='{{ page.v7_url | escape }}'>
+    {% if page.v7_has_page %}
+      View the v7 docs
+    {% else %}
       Info on upgrading to v7
-    </a>
-  </div>
-{% elsif page.version.id == "v5" %}
-  <div id='docs-controls-warning'>
-    These docs are for an old release.
-    <a href='{{ site.baseurl }}/v6/upgrading-from-v5'>
-      Info on upgrading to v6
-    </a>
-  </div>
-{% elsif page.version.id == "v4" %}
-  <div id='docs-controls-warning'>
-    These docs are for an old release.
-    <a href='{{ site.baseurl }}/v5/upgrading-from-v4'>
-      Info on upgrading to v5
-    </a>
-  </div>
-{% elsif page.version.id == "v3" %}
-  <div id='docs-controls-warning'>
-    These docs are for an old release.
-    <a href='{{ site.baseurl }}/v4/upgrading-from-v3'>
-      Info on upgrading to v4
-    </a>
-  </div>
-{% elsif page.version.id == "v1" %}
-  <div id='docs-controls-warning'>
-    These docs are for an old release.
-    <a href='{{ site.baseurl }}/v3/upgrading-from-v1'>
-      Info on upgrading to version 2/3
-    </a>
-  </div>
-{% else %}
-  <div id='docs-controls-warning' style='display:none'>
-    {% comment %}for JS to dynamically inject warning{% endcomment %}
-  </div>
-{% endif %}
+    {% endif %}
+  </a>
+</div>

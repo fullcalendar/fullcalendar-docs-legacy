@@ -1,0 +1,101 @@
+{
+  "from": 6,
+  "to": 7,
+  "replaced": {
+    "addResource": "Calendar-addResource",
+    "all-day-render-hooks": "all-day-header-render-hooks",
+    "bootstrap5-demo": {
+      "url": "https://themes.fullcalendar.io/bootstrap5/#month"
+    },
+    "buttonIcons": "buttons",
+    "buttonText": "buttons",
+    "css-customization": "custom-themes",
+    "customButtons": "buttons",
+    "dayPopoverFormat": "popoverFormat",
+    "destroy": "Calendar-destroy",
+    "eventBackgroundColor": "eventColor",
+    "eventBorderColor": "eventColor",
+    "eventTextColor": "eventContrastColor",
+    "fixedMirrorParent": "event-dragging-resizing",
+    "getResourceById": "Calendar-getResourceById",
+    "getResources": "Calendar-getResources",
+    "getTopLevelResources": "Calendar-getTopLevelResources",
+    "getting-started": {
+      "url": "/docs"
+    },
+    "initialize-browser-esm": {
+      "url": "/docs/vanilla-js#via-script-tags-esm"
+    },
+    "initialize-es6": {
+      "url": "/docs/vanilla-js#via-npm"
+    },
+    "initialize-globals": {
+      "url": "/docs/vanilla-js#via-script-tags"
+    },
+    "intro": {
+      "url": "/docs"
+    },
+    "listDaySideFormat": "listDayAltFormat",
+    "luxon": "format-luxon3",
+    "methods": {
+      "url": "/docs/vanilla-js#calendar-api"
+    },
+    "moment-plugin": "format-moment",
+    "moment-timezone-plugin": "temporal-polyfill",
+    "multiMonthMinWidth": "singleMonthMinWidth",
+    "multiMonthTitleFormat": "singleMonthTitleFormat",
+    "now-indicator-render-hooks": "now-indicator-line-render-hooks",
+    "reduced-test-cases": {
+      "url": "/reduced-test-cases"
+    },
+    "refetchResources": "Calendar-refetchResources",
+    "render": "Calendar-render",
+    "resource-area-header-render-hooks": "resource-column-header-render-hooks",
+    "resource-group-render-hooks": "resource-group-header-render-hooks",
+    "resource-render-hooks": {
+      "slug": "resource-cell-render-hooks",
+      "note": "The v6 article was split into day-header, cell, and lane articles; the cell article is the closest successor to the former label hooks."
+    },
+    "resourceAreaColumns": "resourceColumns",
+    "resourceAreaColumns-demo": "resourceColumns-demo",
+    "resourceAreaColumns-grouping-demo": "resourceColumns-grouping-demo",
+    "resourceAreaWidth": "resourceColumnsWidth",
+    "slot-render-hooks": {
+      "slug": "slot-header-render-hooks",
+      "note": "The v6 article was split into header and lane articles; the header article succeeds the former label-hooks section."
+    },
+    "slotLabelFormat": "slotHeaderFormat",
+    "slotLabelInterval": "slotHeaderInterval",
+    "stickyFooterScrollbar": "footerScrollbarSticky",
+    "stickyHeaderDates": "tableHeaderSticky",
+    "third-party": {
+      "url": "/docs"
+    },
+    "typescript": {
+      "url": "/docs/vanilla-js#typescript"
+    },
+    "week-number-render-hooks": {
+      "slug": "inline-week-number-render-hooks",
+      "note": "The v6 article was split into inline and header articles; inline week numbers are the primary successor."
+    },
+    "weekText": "weekTextShort"
+  },
+  "retired": [
+    "bootstrap4",
+    "bootstrapFontAwesome",
+    "content-security-policy",
+    "defaultRangeSeparator",
+    "dragScrollEls",
+    "handleWindowResize",
+    "luxon1",
+    "nowIndicatorSnap",
+    "theme-chooser-demo",
+    "theme-chooser-timeline-demo",
+    "themeSystem",
+    "titleRangeSeparator",
+    "updateSize",
+    "upgrading-from-v5",
+    "windowResize",
+    "windowResizeDelay"
+  ]
+}

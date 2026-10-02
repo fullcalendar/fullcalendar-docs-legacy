@@ -1,6 +1,8 @@
 ---
 title: V6 Release Notes and Upgrade Guide
+title_for_nav: Upgrading from v5
 layout: text
+description: What changed between v5 and v6, and how to upgrade
 ---
 
 <style>
@@ -21,9 +23,9 @@ The primary goal of V6 is to solve bugs related to the *installation* of FullCal
 
 **Want the code?** [Read the instructions](initialize-es6)
 
-**Want the full docs** in a non-changelog format? [View the docs](/)
+**Want the full docs** in a non-changelog format? [View the docs]({{ site.baseurl }}/v6)
 
-**Found a bug?** [Report it on the issue tracker](/reporting-bugs)
+**Found a bug?** [Report it on the issue tracker]({{ site.main_site_url }}/reporting-bugs)
 
 
 ## Bundlers & CSS

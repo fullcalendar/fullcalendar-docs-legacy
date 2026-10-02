@@ -8,7 +8,7 @@ FullCalendar seamlessly integrates with the [Angular] 12 - 22. It provides a com
 This component is built and maintained by [irustm](https://github.com/irustm) in partnership with the maintainers of FullCalendar. It is the official Angular connector, released under an MIT license, the same license the standard version of FullCalendar uses. Useful links:
 
 - [Browse the Github repo]({{ site.angular_repo_url }}) (please star it!)
-- [Bug report instructions](/reporting-bugs)
+- [Bug report instructions]({{ site.main_site_url }}/reporting-bugs)
 - Example projects:
   [Angular 22](https://github.com/fullcalendar/fullcalendar-examples/tree/v6/angular22)
   | [21](https://github.com/fullcalendar/fullcalendar-examples/tree/v6/angular21)
@@ -248,7 +248,7 @@ export class AppComponent {
 
 ## FullCalendar Premium
 
-How do you use [FullCalendar Premium's](/pricing) plugins with Angular? They are no different than any other plugin. Just follow the same instructions as you did `dayGridPlugin` in the above example. If you plan to use resources, you'll need the `@fullcalendar/resource` package:
+How do you use [FullCalendar Premium's]({{ site.main_site_url }}/pricing) plugins with Angular? They are no different than any other plugin. Just follow the same instructions as you did `dayGridPlugin` in the above example. If you plan to use resources, you'll need the `@fullcalendar/resource` package:
 
 ```sh
 npm install --save \

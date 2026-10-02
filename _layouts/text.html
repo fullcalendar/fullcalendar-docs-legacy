@@ -6,6 +6,14 @@ responsive: true
 <div class='page-content'>
   <div class='page-content__container container'>
 
+    {% if page.is_docs %}
+      <div class='docs-controls'>
+        <div class='docs-controls__warning'>
+          {% include docs-controls/version-warning.html %}
+        </div>
+      </div>
+    {% endif %}
+
     <h1 class='page-content__title'>
       <span class='page-content__title-main'>
         {{ page.title | escape }}

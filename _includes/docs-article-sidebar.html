@@ -25,7 +25,7 @@
                 endif
               %}'>
                 <a href='{{ site.baseurl }}{{ node.article.url | escape }}'>
-                  <span>{{ node.article.title | escape }}</span>
+                  <span>{{ node.article.title_for_nav | default: node.article.title | escape }}</span>
                 </a>
               </li>
             {% endfor %}

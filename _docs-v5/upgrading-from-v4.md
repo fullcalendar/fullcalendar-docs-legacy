@@ -1,6 +1,8 @@
 ---
 title: V5 Release Notes and Upgrade Guide
+title_for_nav: Upgrading from v4
 layout: text
+description: What changed between v4 and v5, and how to upgrade
 ---
 
 <style>
@@ -125,9 +127,9 @@ This guide outlines the changes between v4 and v5.
 
 **Want the full docs** in a non-changelog format? [View the docs](/v5)
 
-**Found a bug?** [Report it on the issue tracker](/reporting-bugs)
+**Found a bug?** [Report it on the issue tracker]({{ site.main_site_url }}/reporting-bugs)
 
-**Have a comment?** [Comment on the latest blog post](/blog/2020/06/v5-official)
+**Have a comment?** [Comment on the latest blog post]({{ site.main_site_url }}/blog/2020/06/v5-official)
 
 </div>
 <div class='sidebar-layout__sidebar sidebar-layout__sidebar--bordered' id='toc' markdown='1'>
@@ -263,7 +265,7 @@ To use a bundle, do something like this:
 
 You'll still need to include the CSS file. You won't need to define the `plugins` array anymore.
 
-For initializing [scheduler](/pricing), do something like this:
+For initializing [scheduler]({{ site.main_site_url }}/pricing), do something like this:
 
 ```html
 <link ref='fullcalendar-scheduler/main.css' rel='stylesheet' />

@@ -5,6 +5,8 @@ children:
   - initialization
   - handlers
   - methods
+  - upgrading-from-v2
+  - upgrading-from-v1
   - title: More Advanced
     children:
       - view-specific-options

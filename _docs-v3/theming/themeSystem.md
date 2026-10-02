@@ -9,7 +9,7 @@ String, *default*: `'standard'`
 </div>
 
 `'standard'`
-: Renders a minimal look & feel, the look in most of the [demos](/). Does not require any CSS files beyond the FullCalendar base files.
+: Renders a minimal look & feel, the look in most of the [demos]({{ site.main_site_url }}/demos). Does not require any CSS files beyond the FullCalendar base files.
 
 `'bootstrap3'`
 : Prepares the calendar for a [Bootstrap 3](https://getbootstrap.com/docs/3.3/) theme. The Bootstrap stylesheet must be separately loaded in its own `<link>` tag. [See a demo](bootstrap3-theme-demo).

@@ -40,10 +40,10 @@
                 <a class='docs-toc-card__head-link'
                   href='{{ site.baseurl }}{{ node.article.url | escape }}'
                   >
-                  {{ node.article.title | escape }}
+                  {{ node.article.title_for_nav | default: node.article.title | escape }}
                 </a>
                 {% if node.article.is_premium %}
-                  <a class='badge' href='{{ site.prod_url }}/pricing'>
+                  <a class='badge' href='{{ site.main_site_url }}/pricing'>
                     Premium
                   </a>
               {% endif %}
@@ -61,7 +61,7 @@
                       {% for child_node in group_node.children %}
                         <li>
                           <a href='{{ site.baseurl }}{{ child_node.article.url | escape }}'>
-                            {{ child_node.article.title | escape }}
+                            {{ child_node.article.title_for_nav | default: child_node.article.title | escape }}
                           </a>
                           {% if child_node.points %}
                             <ul>
