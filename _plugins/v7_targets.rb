@@ -43,8 +43,8 @@ class V7Targets < Jekyll::Generator
 
     for page in site.pages
       if page.output_ext == '.html'
-        page.data['canonical_url'] = self_url(page.url)
-        page.data['in_sitemap'] = true
+        page.data['canonical_url'] ||= self_url(page.url)
+        page.data['in_sitemap'] = page.data['canonical_url'] == self_url(page.url)
       end
     end
   end
