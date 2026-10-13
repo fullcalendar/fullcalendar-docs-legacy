@@ -66,6 +66,30 @@ a.topbar__nav-handle {
 }
 
 
+.topbar__legacy {
+  flex-grow: 0;
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.topbar__legacy-label {
+  // same box metrics as .version-warning in _docs-controls.scss
+  font-size: 13px;
+  line-height: 1.2;
+  padding: 4px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 4px;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media only screen and (max-width: $tablet-breakpoint - 1) { // <tablet
+  .topbar__legacy {
+    display: none;
+  }
+}
+
 .topbar__github {
   display: flex;
   align-items: center;
