@@ -41,10 +41,12 @@ export default createPlugin({
 
 The config object accepts these properties:
 
-- `content` - a [Content Injection Input](content-injection) that renders the view.
+- `content` - a [Content Injection Input](content-injection) that renders the view. Required for the other properties to take effect.
 - `classNames` - a [ClassName Input](classname-input) for the view's root element.
 - `didMount` - called right after the view has been added to the DOM.
 - `willUnmount` - called right before the view will be removed from the DOM.
+
+Without `content`, the object only customizes the options of the view given by its `type`, and `classNames`, `didMount` and `willUnmount` are ignored.
 
 Then, in another file:
 
