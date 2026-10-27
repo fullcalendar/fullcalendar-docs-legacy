@@ -12,4 +12,4 @@ Determines the date format of title of the popover created by the [eventLimitCli
 ```
 </div>
 
-The default value produces strings like `Monday, September 24`.
+The default value produces strings like `September 24, 2018`.
