@@ -2,7 +2,7 @@
 title: now
 ---
 
-Explicitly sets the "today" date of the calendar. This is the day that is normally highlighted in yellow.
+Overrides the calendar's current date, which decides the highlighted "today" and the [now indicator](now-indicator).
 
 <div class='spec' markdown='1'>
 Date, function

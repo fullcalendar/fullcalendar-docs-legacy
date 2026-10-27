@@ -39,7 +39,12 @@ export default createPlugin({
 });
 ```
 
-The `classNames` property is a [ClassName Input](classname-input), and the `content` property is a [Content Injection Input](content-injection).
+The config object accepts these properties:
+
+- `content` - a [Content Injection Input](content-injection) that renders the view.
+- `classNames` - a [ClassName Input](classname-input) for the view's root element.
+- `didMount` - called right after the view has been added to the DOM.
+- `willUnmount` - called right before the view will be removed from the DOM.
 
 Then, in another file:
 

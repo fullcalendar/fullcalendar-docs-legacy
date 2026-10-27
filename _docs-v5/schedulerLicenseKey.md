@@ -31,3 +31,8 @@ To purchase an additional year, either check your email for a renewal notificati
 <h2 id='invalid'>An Invalid License Key</h2>
 
 Sometimes the wrong piece of text is pasted into the `schedulerLicenseKey` setting. Make sure you use the correct key, exactly as sent in your email/invoice. It should be in the form `XXXXXXXXXX-XXX-XXXXXXXXXX`.
+
+
+## Open-Source and Non-Commercial Projects
+
+Projects that use FullCalendar Premium under its open-source or non-commercial license don't need a purchased key. Each of those licenses comes with its own key and terms. See the [license page]({{ site.main_site_url }}/license) to find which license applies to your project.
