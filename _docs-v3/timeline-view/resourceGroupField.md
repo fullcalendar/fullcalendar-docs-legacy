@@ -2,7 +2,7 @@
 title: resourceGroupField
 ---
 
-Visually groups resources by certain criteria.
+Visually groups resources by certain criteria. Only used by resource timeline views.
 
 The given argument must be a field name that each resource object has. Example:
 
@@ -30,5 +30,7 @@ $('#calendar').fullCalendar({
 ```
 
 Resource groups will have a gray divider at the top of each group. The text at the top of each group will be determined by [resourceGroupText](resourceGroupText).
+
+This option is ignored when an entry in [resourceColumns](resourceColumns) has `group: true`. Those columns do the grouping instead.
 
 [See a demo of resourceGroupField](timeline-resourceGroupField-demo).
