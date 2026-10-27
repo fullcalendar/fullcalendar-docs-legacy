@@ -287,7 +287,7 @@ FullCalendar now distributes JS with (ES6) ES2015 syntax. Thus, reliance on `tsl
 
 ## Codebase Improvements
 
-The tooling of the codebase has been refactored to improve the contributor experience. For example, [PNPM](https://pnpm.io/) and [Turborepo](https://turbo.build/) are now used. [View the master monorepo](https://github.com/fullcalendar/fullcalendar-workspace/tree/main) on GitHub.
+The tooling of the codebase has been refactored to improve the contributor experience. For example, [PNPM](https://pnpm.io/) and [Turborepo](https://turbo.build/) are now used. [View the master monorepo](https://github.com/fullcalendar/fullcalendar-workspace/tree/v6) on GitHub.
 
 
 </div>
