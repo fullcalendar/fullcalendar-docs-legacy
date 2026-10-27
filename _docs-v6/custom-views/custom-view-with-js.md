@@ -45,7 +45,12 @@ export default createPlugin({
 });
 ```
 
-The `classNames` property is a [ClassName Input](classname-input), and the `content` property is a [Content Injection Input](content-injection).
+The config object accepts these properties:
+
+- `content` - a [Content Injection Input](content-injection) that renders the view.
+- `classNames` - a [ClassName Input](classname-input) for the view's root element.
+- `didMount` - called right after the view has been added to the DOM.
+- `willUnmount` - called right before the view will be removed from the DOM.
 
 Then, in another file:
 
@@ -101,7 +106,7 @@ If you're using the React connector you can [specify a React component instead](
 
 ## Props
 
-Both the config and component techniques receive "props", an object with information about the current view. You'll need to look at the [FullCalendar source code](https://github.com/fullcalendar/fullcalendar/blob/main/packages/core/src/View.ts) to see exactly what's in `props`.
+Both the config and component techniques receive "props", an object with information about the current view. You'll need to look at `ViewProps` in the [FullCalendar v6 source code](https://github.com/fullcalendar/fullcalendar/blob/v6/packages/core/src/View.ts) to see exactly what's in `props`.
 
 
 ## Other Considerations

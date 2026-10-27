@@ -3,14 +3,14 @@ title: nowIndicatorSnap
 since_version: 6.1.19
 ---
 
-Determines whether the now indicator aligns with the start of the slot.
+Whether the [now indicator](nowIndicator) jumps to the start of each time unit instead of tracking the exact time.
 
 <div class='spec' markdown='1'>
 `true`/`false`/`'auto'`, *default*: `'auto'`
 </div>
 
-Relevant to timeline/resource-timeline view.
+When snapping, the indicator sits at the start of the current unit and moves once the next unit begins. Otherwise it moves to the exact current [now](now) once a minute.
 
-The default `'auto'` value will snap when the slot unit is either year, month, week, day, or hour. For units smaller than an hour, the now-indicator's coordinate will exactly reflect the current [now](now).
+The unit depends on the view. In **TimeGrid** views it is the minute, so the indicator moves every minute either way. In **Timeline** views it comes from the [slotDuration](slotDuration): the hour for `'01:00'` slots, the day for `{ days: 1 }` slots.
 
-Set to `false` to ensure the now-indicator's coordinate ALWAYS exactly reflect the current [now](now).
+`'auto'` snaps in Timeline views when the slot duration is a single unit, such as one hour, or is measured in days or longer. With 30-minute slots, for example, it tracks the exact time.

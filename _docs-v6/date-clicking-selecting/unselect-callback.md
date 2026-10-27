@@ -6,7 +6,7 @@ type: callback
 Triggered when the current selection is cleared.
 
 <div class='spec' markdown='1'>
-function( *jsEvent*, *view* )
+function( *info* )
 </div>
 
 A selection might be cleared for a number of reasons:
@@ -20,4 +20,7 @@ A selection might be cleared for a number of reasons:
 4. The [unselect](Calendar-unselect) method is called through the API.
 
 
-`jsEvent` holds the primitive JavaScript event with information such as mouse coordinates. If `unselect` has been triggered via the [unselect method](Calendar-unselect), `jsEvent` will be `undefined`.
+`info` is a plain object with the following properties:
+
+- `jsEvent` - the native JavaScript event with information such as mouse coordinates. If `unselect` has been triggered via the [unselect method](Calendar-unselect), `jsEvent` will be `null`.
+- `view` - the current [View Object](view-object).

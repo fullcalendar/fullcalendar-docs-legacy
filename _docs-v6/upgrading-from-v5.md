@@ -223,7 +223,7 @@ The codebase will likely be rearchitected in the future to once again support a 
 
 ## Web Component Package
 
-**Feature:** The [Web Components API][web-components] provide a standardized way to make reusable custom elements. FullCalendar offers a custom element in the new  `@fullcalendar/web-component` package. [Learn how to use it &raquo;](https://github.com/fullcalendar/fullcalendar/tree/main/packages/web-component)
+**Feature:** The [Web Components API][web-components] provide a standardized way to make reusable custom elements. FullCalendar offers a custom element in the new  `@fullcalendar/web-component` package. [Learn how to use it &raquo;](https://github.com/fullcalendar/fullcalendar/tree/v6/packages/web-component)
 
 
 ## iCalendar Package
