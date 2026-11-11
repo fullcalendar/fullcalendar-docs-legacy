@@ -2,7 +2,9 @@
 title: eventLeave
 ---
 
-Triggered when on a calendar when one if its events is about to be [dropped onto another calendar](other-calendar-dragging).
+Triggered on a calendar after one of its events is [dropped onto another calendar](other-calendar-dragging).
+
+It fires after the drop, just before the event is removed from this calendar.
 
 <div class='spec' markdown='1'>
 function( *info* ) { }
@@ -15,7 +17,7 @@ function( *info* ) { }
 <tr>
 <th>event</th>
 <td markdown='1'>
-An [Event object](event-object) that is about to leave.
+An [Event object](event-object) that is leaving.
 </td>
 </tr>
 

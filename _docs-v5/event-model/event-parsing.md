@@ -113,7 +113,7 @@ Here are all the available properties, **all of which are optional**:
   <tr>
   <th>interactive</th>
   <td markdown='1'>
-  Boolean. Whether or not the event is tabbable. Defaults to `true` if `url` is present, `false` otherwise. See [eventInteractive](eventInteractive) for more info.
+  Boolean. Whether or not the event is tabbable. Only consulted when the calendar's [eventInteractive](eventInteractive) option is unset. When this is also unset, the event is interactive if an [eventClick](eventClick) handler is defined. Events with a `url` are always interactive. See [eventInteractive](eventInteractive) for more info.
   </td>
   </tr>
 

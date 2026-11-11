@@ -22,7 +22,7 @@ var calendar = new Calendar(calendarEl, {
 
 The `visibleRange` object must have `start` and `end` properties that [parse into dates](date-parsing). In line with the discussion about the [Event object](event-parsing), it is important to stress that the `end` date property is **exclusive**, just like all other places in the API.
 
-You can also specify a function that dynamically generates a range from the current date marker. The following example renders one day before the current view date, and two days after:
+You can also specify a function that dynamically generates a range from the calendar's current date, the date the user has navigated to (not today's date). The following example renders one day before the current view date, and two days after:
 
 ```js
 var calendar = new Calendar(calendarEl, {
