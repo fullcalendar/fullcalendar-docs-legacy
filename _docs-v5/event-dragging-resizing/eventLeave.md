@@ -4,7 +4,7 @@ title: eventLeave
 
 Triggered on a calendar after one of its events is [dropped onto another calendar](other-calendar-dragging).
 
-It fires after the drop, just before the event is removed from this calendar.
+It fires when the event is released, before the event is removed from this calendar and before the receiving calendar's [drop](drop) and [eventReceive](eventReceive) callbacks.
 
 <div class='spec' markdown='1'>
 function( *info* ) { }

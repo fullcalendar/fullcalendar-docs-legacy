@@ -3,7 +3,7 @@ title: eventInteractive
 since_version: 5.10.0
 ---
 
-Setting to `true` will cause all events to be focusable/tabbable. Setting to `false` makes them non-interactive.
+Setting to `true` will cause all events to be focusable/tabbable. Setting to `false` makes them non-interactive (except events with a `url`).
 
 <div class='spec' markdown='1'>
 Boolean, default: unset
