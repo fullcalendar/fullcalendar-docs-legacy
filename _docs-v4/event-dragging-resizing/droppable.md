@@ -2,10 +2,12 @@
 title: droppable
 ---
 
-Determines if [external draggable elements](external-dragging) or events from other calendars can be dropped onto the calendar.
+Determines if events [from other calendars](other-calendar-dragging) can be dropped onto the calendar.
 
 <div class='spec' markdown='1'>
 Boolean, *default*: `false`
 </div>
 
-It's important to enable this setting if you want to use the [drop callback](drop) or the [eventReceive callback](eventReceive).
+The receiving calendar must also have [editable](editable) set to `true` to accept events from other calendars.
+
+This setting does not affect [external draggable elements](external-dragging) (`Draggable` or `ThirdPartyDraggable`), which can be dropped regardless. Use [dropAccept](dropAccept) to filter those.

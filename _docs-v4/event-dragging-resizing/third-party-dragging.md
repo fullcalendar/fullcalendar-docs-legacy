@@ -17,8 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let calendarEl = document.getElementById('mycalendar');
 
   let calendar = new Calendar(calendarEl, {
-    plugins: [ interactionPlugin, dayGridPlugin ],
-    droppable: true
+    plugins: [ interactionPlugin, dayGridPlugin ]
   });
   calendar.render();
 

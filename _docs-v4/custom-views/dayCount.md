@@ -8,7 +8,7 @@ Sets the exact number of days displayed in a custom view, regardless of [weekend
 Integer
 </div>
 
-When a view's range is specified with a [duration](duration), hidden days will simply be omitted, and the view will stretch to fill the missing space. However, if you specify `dayCount`, you are guaranteed to see a certain number of days.
+When a view's range is specified with a [duration](duration), hidden days will simply be omitted, and the view will stretch to fill the missing space. However, if you specify `dayCount`, you are guaranteed to see a certain number of days. Only visible days are counted: days hidden by [weekends](weekends) `false` or [hiddenDays](hiddenDays) are skipped.
 
 Example for a [Custom View](custom-view-with-settings):
 

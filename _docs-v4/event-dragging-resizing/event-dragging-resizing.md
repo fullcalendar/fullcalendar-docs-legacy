@@ -45,4 +45,4 @@ demos:
   - event-constraint-demo
 ---
 
-How to enable and control where the user can drag-n-drop and resize events. Start by setting the [editable](editable) setting to `true`. If you want to allow external elements to be dropped onto your calendar, visit the [droppable](droppable), [drop](drop), and [eventReceive](eventReceive) articles.
+How to enable and control where the user can drag-n-drop and resize events. Start by setting the [editable](editable) setting to `true`. If you want to allow external elements to be dropped onto your calendar, visit the [external dragging](external-dragging), [drop](drop), and [eventReceive](eventReceive) articles. To accept events from other calendars, see [droppable](droppable).
