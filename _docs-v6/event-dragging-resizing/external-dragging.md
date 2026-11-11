@@ -6,7 +6,7 @@ It's possible to take elements that live outside of a calendar and make them dra
 
 [See a live demo](external-dragging-demo).
 
-To demonstrate the most basic case, you can create a draggable element by instantiating a `Draggable`. You must also set the calendar's [droppable](droppable) setting to `true` and import the `interaction` plugin:
+To demonstrate the most basic case, you can create a draggable element by instantiating a `Draggable`. You must also import the `interaction` plugin. (The [droppable](droppable) setting isn't needed; it only governs events from other calendars. Use [dropAccept](dropAccept) to filter which elements can be dropped.)
 
 ```js
 import { Calendar } from '@fullcalendar/core';
@@ -17,8 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let calendarEl = document.getElementById('mycalendar');
 
   let calendar = new Calendar(calendarEl, {
-    plugins: [ interactionPlugin ],
-    droppable: true
+    plugins: [ interactionPlugin ]
   });
   calendar.render();
 

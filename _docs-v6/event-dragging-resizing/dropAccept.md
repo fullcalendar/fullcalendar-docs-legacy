@@ -8,7 +8,7 @@ Provides a way to filter which external elements can be dropped onto the calenda
 String/Function, *default*: `"*"`
 </div>
 
-By default, after setting a calendar's [droppable](droppable) option to `true`, the calendar will accept any draggables that are dropped onto the calendar. The `dropAccept` option makes the calendar more selective about which elements can/can't be dropped.
+By default, the calendar will accept any draggables that are dropped onto the calendar. (The [droppable](droppable) option doesn't affect external elements; it only governs events from other calendars.) The `dropAccept` option makes the calendar more selective about which elements can/can't be dropped.
 
 The value of `dropAccept` can be a string [CSS selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors). It can also be a function that accepts the draggable item as a single argument, and returns `true` if the element can be dropped onto the calendar.
 
@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var calendar = new Calendar(calendarEl, {
     plugins: [ interactionPlugin, dayGridPlugin ],
-    droppable: true,
     dropAccept: '.cool-event',
     drop: function() {
       alert('dropped!');

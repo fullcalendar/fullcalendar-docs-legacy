@@ -2,15 +2,15 @@
 title: eventAllow
 ---
 
-Exact programmatic control over where an event can be dropped.
+Exact programmatic control over where an event can be dropped or resized to.
 
 <div class='spec' markdown='1'>
 function(dropInfo, draggedEvent)
 </div>
 
-After it has been determined that the [eventOverlap](eventOverlap) and [eventConstraint](eventConstraint) settings will allow the user to drop an event at a given position on the calendar, the `eventAllow` callback will be called. It will be called for every new potential droppable position as the user is dragging.
+After it has been determined that the [eventOverlap](eventOverlap) and [eventConstraint](eventConstraint) settings will allow the user to drop an event at a given position on the calendar, the `eventAllow` callback will be called. It will be called for every new potential droppable position as the user is dragging. It is also consulted while the user is resizing an event, for each proposed new span.
 
-If specified, it must return either `true` or `false` as to whether the calendar will allow the given event (`draggedEvent`) to be dropped at the given location (`dropInfo`).
+If specified, it must return either `true` or `false` as to whether the calendar will allow the given event (`draggedEvent`) to be placed at the proposed date span (`dropInfo`).
 
 ```js
 eventAllow: function(dropInfo, draggedEvent) {

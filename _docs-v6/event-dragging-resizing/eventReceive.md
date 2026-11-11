@@ -46,7 +46,7 @@ The current [View Object](view-object).
 
 </table>
 
-This callback is fired *before* the [eventAdd](eventAdd) callback is fired.
+For an event from another calendar, this callback is fired *after* the [eventAdd](eventAdd) callback is fired. Dropping an external element does not fire [eventAdd](eventAdd).
 
 
 ## Resources

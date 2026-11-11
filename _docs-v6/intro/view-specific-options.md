@@ -39,4 +39,6 @@ var calendar = new Calendar(calendarEl, {
 });
 ```
 
+A key can be a view name, a view type (like `dayGrid`), or a duration unit (`day`, `week`, `month`, or `year`). A duration-unit key applies to every view whose duration is exactly one of that unit.
+
 If an option is not matched by a View-Specific Option, the option value is taken from the top-level options object (whatever you passed in to `new Calendar`).
