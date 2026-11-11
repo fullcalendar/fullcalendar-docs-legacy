@@ -23,7 +23,7 @@ $('#calendar').fullCalendar({
 
 The `visibleRange` object must have `start`/`end` properties that resolve to [Moment](moment) values. The `end` moment is exclusive, just like all other places in the API.
 
-You can also specify a function that dynamically generates a range from the current date marker. The following example renders one day before the current date, and two days after:
+You can also specify a function that dynamically generates a range from the current date marker, the date the user has navigated to (not today's date). The following example renders one day before the current date, and two days after:
 
 ```js
 $('#calendar').fullCalendar({
